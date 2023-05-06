@@ -179,10 +179,13 @@ body {
   height: 20px;
 }
 
+.plats {
+  height: 411px;
+}
+
 .plats-container {
   margin: 0 13px 12px 13px;
   width: 93.06%;
-  height: 411px;
   display: flex;
   flex-wrap: wrap;
 }
