@@ -1,0 +1,35 @@
+.foot {
+    width: 335px;
+    height: 197px;
+    background: #353535;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    &__titre {
+        font-family: myFirstFont;
+        font-style: italic;
+        width: 98px;
+        height: 18px;
+        line-height: 26.24px;
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        margin-block: 10px;
+    }
+
+    &__a {
+        text-decoration-line: none;
+        color: white;
+    }
+
+    &__svg1 {
+        width: 11px;
+        height: 13px;
+    }
+
+    &__svg2 {
+        width: 12px;
+        height: 13px;
+    }}
