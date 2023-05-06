@@ -22,65 +22,134 @@
 
 
 body {
-    position: relative;
     width: 375px;
     margin: auto;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
 }
-.landing-restaurant {
-    position: absolute;
-    top: 7.5vh;
+.landingresto {
+    position: relative;
 
     &__img {
-        height: 40.2vh;
+        height: 32.73vh;
         width: 100%;
         object-fit: cover;
     }
-}
-.landing-container {
-    position: absolute;
-    top: 41.37vh;
-    height: 58.63vh;
-    background: #F7F7F7;
-    border-radius: 25px 25px 0 0;
 
-    &__titre {
-    display: flex;
-    justify-content: space-around;
-    }
+    &-container {
+        position: absolute;
+        top: 26.19vh;
+        height: 58.63vh;
+        width: 100%;
+        background: #F7F7F7;
+        border-radius: 25px 25px 0 0;
 
-    &__nom {
-        font-family: myFirstFont;
-        font-weight: 400;
-        font-style: italic;
-        font-size: 1.75rem;
-        line-Height: 2.55rem;
-    }
-    &__coeur {
-        width: 5.87%;
-        height: 3.07vh;
-        line-Height: 2.55rem;
-        margin-block: 1em;
-    }
-    &__entrees {
-        margin: 0 13px 12px 13px;
-        width: 93.06%;
-        /*height: 380px;*/
+        &-titre {
         display: flex;
-        flex-wrap: wrap;
-        
-        h1 {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 300;
-            line-height: 1.1875rem;
-            text-transform: uppercase;    }
+        justify-content: space-around;
+
+            &__nom {
+                font-family: myFirstFont;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 1.75rem;
+                line-Height: 2.55rem;
+            }
+
+            &__coeur {
+                width: 5.87%;
+                height: 3.07vh;
+                line-Height: 2.55rem;
+                margin-block: 2rem;
+            }
+        }
+        &__entrees {
+            margin: 0 13px 12px 13px;
+            width: 93.06%;
+            display: flex;
+            flex-wrap: wrap;
+            
+            h1 {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                line-height: 1.1875rem;
+                text-transform: uppercase;
+            }
+        }
     }
        
 }
 .choixart {
+    position: relative;
+    width: 100%;
+    height: 69px;
+    margin-bottom: 12px;
+    border-radius: 15.0431px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        position: absolute;
+        top: 12px;
+        left: 4.30%;
+        margin-block: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &-l2 {
+        position: absolute;
+        top: 38px;
+        left: 4.30%;
+        width: 95.7%;
+        height: 19px;
+        white-space: nowrap;
+        display:flex;
+        justify-content: space-between;
+
+        &__gout {
+            font-size: 0.94rem;
+            margin-block: 0;
+        }
+
+        &__prix {
+            font-weight: 700;
+            font-size: 0.94rem;
+            line-height: 1.125rem;
+            margin-block: 0;
+            margin-inline-end: 15px;
+        }
+    }
+
+    &-l2choix {
+        position: relative;
+        height: 0px;
+        width: 0px;
+
+        &__btn {
+            position: absolute;
+            top: -38px;
+            height: 0px;
+            width: 0px;
+                position: relative;
+            background: #99E2D0;
+            border-radius: 0 15px 15px 0;
+        }
+
+        &__svg {
+            position: absolute;
+            top: 25px;
+            left: 20px;
+            width: 33%;
+            height: 20px;
+        }
+    }
+}
+/* .choixart {
     position: relative;
     width: 93.06%;
     height: 69px;
@@ -150,9 +219,9 @@ body {
         width: 47px;
     }
     &__prixdest {
-    /*    transform-origin: 0% 50%;  */
+    /*    transform-origin: 0% 50%;  
         transition: transform 1000ms cubic-bezier(.32,0,.07,1);
-    }
+/*     }
     &__cochebase {
         position: absolute;
         top: 25px;
@@ -163,7 +232,7 @@ body {
     &__cochedest {
 /*     transform-origin: 0% 50%;
       transform: scaleX(1);   */
-      transform: scale(0);
+/*       transform: scale(0);
       transition: transform 1000ms cubic-bezier(.32,0,.07,1);
     }
 
@@ -179,11 +248,9 @@ body {
     &__choixdest {
 /*     transform-origin: 0% 50%;
       transform: scaleX(1);   */
-      transform: scale(0);
-      transition: transform 1000ms cubic-bezier(.32,0,.07,1);
-    }
-
-}
+/*       transform: scale(0);
+      transition: transform 1000ms cubic-bezier(.32,0,.07,1); */
+ 
 .plats {
     position: absolute;
     top: 694px;
