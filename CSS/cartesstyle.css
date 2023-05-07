@@ -11,7 +11,6 @@
   left: 0%;
   height: 7.5vh;
   right: 0%;
-  bottom: 44.25%;
 }
 .landing-entete__svg {
   position: absolute;
@@ -67,6 +66,10 @@ body {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
+}
+
+#landing {
+  height: 694px;
 }
 
 .landingresto {
@@ -180,7 +183,8 @@ body {
 }
 
 #plats {
-  height: 1000px;
+  height: 411px;
+  background: #F7F7F7;
 }
 
 .plats-container {
@@ -200,6 +204,7 @@ body {
 
 #desserts {
   height: 380px;
+  background: #F7F7F7;
 }
 
 .desserts-container {
@@ -212,9 +217,9 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1875rem;
   text-transform: uppercase;
+  height: 20px;
 }
 
 .commander {
