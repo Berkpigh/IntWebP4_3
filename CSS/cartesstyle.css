@@ -179,8 +179,8 @@ body {
   height: 20px;
 }
 
-.plats {
-  height: 411px;
+#plats {
+  height: 1000px;
 }
 
 .plats-container {
@@ -198,14 +198,17 @@ body {
   height: 20px;
 }
 
-.desserts {
-  margin: 0 13px 13px 17px;
-  width: 349px;
+#desserts {
   height: 380px;
+}
+
+.desserts-container {
+  margin: 0 13px 12px 13px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.desserts h1 {
+.desserts-container h1 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -219,11 +222,10 @@ body {
   margin-left: 85px;
 }
 
-.subfooter__container {
-  position: absolute;
-  top: 1720px;
-}
-
+/*.subfooter__container {
+    position: absolute;
+    top: 1720px;
+}*/
 /* .choixart {
     position: relative;
     width: 93.06%;
