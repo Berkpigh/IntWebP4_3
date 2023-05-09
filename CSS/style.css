@@ -7,7 +7,6 @@
   left: 0%;
   height: 7.5vh;
   right: 0%;
-  bottom: 44.25%;
 }
 .landing-entete__svg {
   position: absolute;
@@ -17,11 +16,31 @@
   height: 44px;
 }
 .landing-entete__svgfleche {
-  left: 6px;
-  width: 17.2px;
-  height: 16px;
+  position: absolute;
+  top: 18px;
+  left: 1.6%;
+  width: 4.59%;
+  height: 1rem;
 }
 
+@media only screen and (min-width: 1440px) {
+  .landing-entete {
+    height: 96px;
+  }
+  .landing-entete__svg {
+    position: absolute;
+    top: 30px;
+    left: 43.05%;
+    width: 13.89%;
+  }
+  .landing-entete__svgfleche {
+    position: absolute;
+    top: 40px;
+    left: 1.6%;
+    width: 1.19%;
+    height: 1rem;
+  }
+}
 .foot {
   width: 335px;
   height: 197px;
@@ -55,6 +74,50 @@
   height: 13px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .foot {
+    width: 100%;
+    height: 8.172vh;
+    background: #353535;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .foot__titre {
+    font-family: myFirstFont;
+    font-style: italic;
+    width: 98px;
+    height: 18px;
+    line-height: 26.24px;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    margin-block: 10px;
+  }
+  .foot__a {
+    text-decoration-line: none;
+    color: white;
+  }
+  .foot__svg1 {
+    width: 11px;
+    height: 13px;
+  }
+  .foot__svg2 {
+    width: 12px;
+    height: 13px;
+  }
+}
+.boutonviolet {
+  height: 50px;
+  width: 100%;
+  color: white;
+  line-height: 1.172rem;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
 body {
   width: 375px;
   margin: auto;
@@ -72,7 +135,7 @@ body {
 }
 .landing-restaurant__svg {
   width: 12px;
-  height: 16px;
+  height: 1rem;
   margin-right: 20px;
 }
 
@@ -87,7 +150,7 @@ body {
   position: absolute;
   top: 39.5px;
   height: 8.1vh;
-  left: 50px;
+  left: 13.33%;
   width: 73.33%;
   font-size: 1.5rem;
   font-weight: 700;
@@ -97,7 +160,7 @@ body {
   position: absolute;
   top: 107.5px;
   height: 5.48vh;
-  left: 30px;
+  left: 9.07%;
   width: 84%;
   font-size: 1.125rem;
   font-weight: 300;
@@ -261,13 +324,189 @@ body {
   height: 21px;
 }
 
-.boutonviolet {
-  height: 50px;
-  color: white;
-  line-height: 18.75px;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
+@media only screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+  .landing-restaurant {
+    width: 100%;
+    height: 50px;
+  }
+  .landing-restaurant__svg {
+    width: 12px;
+    margin-right: 17px;
+  }
+  .landing-choixmenu {
+    height: 239px;
+    text-align: center;
+    background: #f7f7f7;
+  }
+  .landing-choixmenu__p1 {
+    position: absolute;
+    top: 30px;
+    height: 47px;
+    left: 27.6%;
+    width: 58.68%;
+    font-size: 2.5rem;
+    margin-block: 0;
+  }
+  .landing-choixmenu__p2 {
+    position: absolute;
+    top: 95px;
+    height: 46px;
+    left: 31.49%;
+    width: 36.875%;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.3125rem;
+  }
+  .landing-choixmenu__btn {
+    position: absolute;
+    top: 159px;
+    left: 41.49%;
+    width: 15.14%;
+  }
+  .landing-fonctionnement {
+    height: 228px;
+    margin: 0 14.375% 0 13.36875%;
+    width: 71.63%;
+  }
+  .landing-fonctionnement h1 {
+    position: absolute;
+    top: 50px;
+    line-height: 1.75rem;
+  }
+  .landing-fonctionnement__container {
+    position: absolute;
+    top: 105px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .landing-fonctionnement .fonctionart {
+    position: relative;
+    width: 31.265%;
+    height: 72.38px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    display: flex;
+  }
+  .landing-fonctionnement .fonctionart span:nth-child(1) {
+    position: absolute;
+    left: -18px;
+    top: 19px;
+    height: 35px;
+    width: 35px;
+    line-height: 20px;
+  }
+  .landing-fonctionnement .fonctionart__no {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    width: 4.73%;
+    height: 27.63%;
+  }
+  .landing-fonctionnement .fonctionart__symbol {
+    position: absolute;
+    left: 10.48%;
+    top: 24px;
+    width: 4.043%;
+    height: 1.25rem;
+  }
+  .landing-fonctionnement .fonctionart__texte {
+    position: absolute;
+    left: 25.78%;
+    top: 28.59px;
+    width: 65.42%;
+    height: 0.9793rem;
+    white-space: nowrap;
+  }
+  .landing-fonctionnement .fonctionart__a {
+    position: absolute;
+    top: 12px;
+    line-height: 1.1875rem;
+    color: black;
+    text-decoration: none;
+  }
+  #main {
+    height: 668px;
+    width: 100%;
+    background: #F6F6F6;
+  }
+  .restos {
+    position: relative;
+    margin: 0 14.375% 0 13.36875%;
+    height: 668px;
+  }
+  .restos h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 1.75rem;
+  }
+  .restos__container {
+    position: absolute;
+    top: 85px;
+    height: 582px;
+    width: 100%;
+    margin: 10px 14.5px 10px 14.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .restoart {
+    position: relative;
+    margin: 10px 0 10px 0;
+    width: 490px;
+    height: 251px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  .restoart__img {
+    width: 490;
+    height: 117px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .restodesc {
+    position: relative;
+    display: grid;
+    grid-template-columns: 39.05% 8.38%;
+    grid-template-rows: 20px 20px;
+  }
+  .restodesc__1 {
+    grid-column: 1/2;
+  }
+  .restodesc__p1 {
+    margin-block: 10px 0;
+    margin-inline: 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .restodesc__2 {
+    grid-column: 1/2;
+    margin-block: 0;
+  }
+  .restodesc__p2 {
+    margin-block: 2px 0;
+    margin-inline: 10px 0;
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .restodesc__3 {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    grid-column: 2/3;
+    width: 23px;
+    height: 21px;
+  }
+  .footer__container {
+    height: 114px;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

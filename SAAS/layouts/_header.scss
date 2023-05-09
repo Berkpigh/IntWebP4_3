@@ -19,3 +19,23 @@
     height: 1rem;
    }
 }
+@media only screen and (min-width: 1440px) {
+    .landing-entete {
+        height: 96px;
+    
+        &__svg {
+            position: absolute;
+            top: 30px;
+            left: 43.05%;
+            width : 13.89%;
+       }
+       &__svgfleche {
+        position: absolute;
+        top: 40px;
+        left: 1.6%;
+        width : 1.19%;
+        height: 1rem;
+       }
+    }
+   
+}
