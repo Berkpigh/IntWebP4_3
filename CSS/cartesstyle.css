@@ -8,16 +8,24 @@
 }
 .landing-entete {
   position: relative;
-  left: 0%;
-  height: 7.5vh;
-  right: 0%;
+  top: 0;
+  left: 0;
+  height: 63px;
 }
 .landing-entete__svg {
   position: absolute;
-  top: 14px;
-  left: 28%;
-  width: 43.2%;
-  height: 44px;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  font-size: 1.875rem;
+  font-family: myFirstFont;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  color: #101010;
+  margin-block: 0;
 }
 .landing-entete__svgfleche {
   position: absolute;
@@ -45,11 +53,16 @@
     height: 1rem;
   }
 }
+.subfooter__container {
+  width: 100%;
+  height: 186px;
+}
+
 .foot {
   width: 335px;
-  height: 197px;
+  height: 142px;
+  padding: 22px 25px 22px 25px;
   background: #353535;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -58,10 +71,10 @@
   font-family: myFirstFont;
   font-style: italic;
   width: 98px;
-  height: 18px;
-  line-height: 26.24px;
+  height: 1.6875rem;
+  line-height: 1.64rem;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: white;
   margin-block: 10px;
 }
@@ -81,9 +94,8 @@
 @media only screen and (min-width: 1440px) {
   .foot {
     width: 100%;
-    height: 8.172vh;
+    height: 186px;
     background: #353535;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -92,10 +104,10 @@
     font-family: myFirstFont;
     font-style: italic;
     width: 98px;
-    height: 18px;
+    height: 1.125rem;
     line-height: 26.24px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: white;
     margin-block: 10px;
   }
@@ -132,21 +144,22 @@ body {
 
 #landing {
   height: 694px;
+  width: 100%;
 }
 
 .landingresto {
   position: relative;
-  height: 75.12vh;
+  height: 620px;
 }
 .landingresto__img {
-  height: 32.73vh;
+  height: 275px;
   width: 100%;
   object-fit: cover;
 }
 .landingresto-container {
   position: absolute;
-  top: 26.19vh;
-  height: 48.93vh;
+  top: 220px;
+  height: 410px;
   width: 100%;
   background: #F7F7F7;
   border-radius: 25px 25px 0 0;
@@ -164,7 +177,7 @@ body {
 }
 .landingresto-container-titre__coeur {
   width: 5.87%;
-  height: 3.07vh;
+  height: 21px;
   line-Height: 2.55rem;
   margin-block: 2rem;
 }
@@ -186,39 +199,41 @@ body {
   position: relative;
   width: 100%;
   height: 69px;
+  padding: 0;
   margin-bottom: 12px;
   border-radius: 15.0431px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
-.choixart h2 {
+.choixart-desc {
   position: absolute;
-  top: 12px;
   left: 4.3%;
+  width: 93.06%;
+  display: block;
+  text-decoration: none;
+}
+.choixart-desc__titre {
+  height: 1.3125rem;
+  margin: 12px 0 5px 0;
+}
+.choixart-desc__titre h2 {
   margin-block: 0;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: black;
 }
-.choixart-l2 {
-  position: absolute;
-  top: 38px;
-  left: 4.3%;
-  width: 93.06%;
-  height: 19px;
-  text-decoration: none;
-}
-.choixart-l2__flex {
+.choixart-desc__flex {
   white-space: nowrap;
   display: flex;
   justify-content: space-between;
 }
-.choixart-l2__gout {
+.choixart-desc__gout {
   font-size: 0.94rem;
   margin-block: 0;
 }
-.choixart-l2__prix {
+.choixart-desc__prix {
   font-weight: 700;
   font-size: 0.94rem;
   line-height: 1.125rem;
@@ -228,9 +243,9 @@ body {
 .choixart__btn {
   position: absolute;
   top: 0px;
-  left: 349px;
-  height: 69px;
-  width: 59px;
+  left: 0px;
+  height: 0px;
+  width: 0px;
   background: #99E2D0;
   border-radius: 0 15px 15px 0;
 }
