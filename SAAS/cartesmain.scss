@@ -211,6 +211,105 @@ body {
         left: 25.2%;
     }
 }
+@media only screen and (min-width: 1440px) {
+    body {
+        width: 1440px;
+    }
+    #landing {
+        height: 853px;
+        width: 100%;
+    }
+    .landingresto {
+        position: relative;
+        height: 757px;
+    
+        &__img {
+            height: 383px;
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        &-container {
+            position: absolute;
+            top: 343px;
+            height: 420px;
+            width: 73.263%;
+            background: #F7F7F7;
+            border-radius: 25px 25px 0 0;
+            margin: 0 13.368% 0 13.368%;
+    
+            &-titre {
+            display: flex;
+            justify-content:center;
+    
+                &__nom {
+                    font-family: myFirstFont;
+                    font-weight: 400;
+                    font-style: italic;
+                    font-size: 1.75rem;
+                    line-Height: 2.5625rem;
+                    width: 26.06%;
+                }
+    
+                &__coeur {
+                    width: 2.085%;
+                    height: 21px;
+                    line-Height: 2.55rem;
+                    margin-block: 2rem;
+                }
+            }
+            &__entrees {
+                margin-bottom: 12px;
+                width: 60.094%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 19.952% 0 19.952%;
+                
+                h1 {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 1.1875rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    #plats {
+        height: 311px;
+        width: 73.263%;
+        margin: 0 13.368% 0 13.368%;
+        background: #F7F7F7;
+    }
+    .plats-container {
+        margin: 0 19.952% 0 19.952%;
+        width: 60.094%;
+    }
+    #desserts {
+        height: 330px;
+        width: 73.263%;
+        margin: 0 13.368% 0 13.368%;
+        background: #F7F7F7;
+    }
+    .desserts-container {
+        margin: 0 19.952% 0 19.952%;
+        width: 60.094%;
+    }
+    .commande {
+        position: relative;
+        width: 73.263%;
+        height: 80px;
+        margin: 0 13.368% 0 13.368%;
+        background: #F7F7F7;
+    
+        &__btn {
+            position: absolute;
+            top: 0;
+            width: 14.597%;
+            left: 41.137%;
+        }
+    }
+}
 /*.subfooter__container {
     position: absolute;
     top: 1720px;
