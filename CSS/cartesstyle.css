@@ -71,6 +71,10 @@
   flex-direction: column;
   justify-content: space-around;
 }
+.foot a {
+  text-decoration-line: none;
+  color: white;
+}
 .foot__titre {
   font-family: myFirstFont;
   font-style: italic;
@@ -82,29 +86,45 @@
   color: white;
   margin-block: 10px;
 }
-.foot__a1 {
-  text-decoration-line: none;
-  color: white;
+
+.footlien1 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
 }
-.foot__a2 {
-  text-decoration-line: none;
-  color: white;
+.footlien1 p {
+  margin-block: 0;
 }
-.foot__a3 {
-  text-decoration-line: none;
-  color: white;
-}
-.foot__a4 {
-  text-decoration-line: none;
-  color: white;
-}
-.foot__svg1 {
+.footlien1__svg1 {
   width: 11px;
   height: 13px;
 }
-.foot__svg2 {
+
+.footlien2 {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.footlien2 p {
+  margin-block: 0;
+}
+.footlien2__svg1 {
   width: 12px;
   height: 13px;
+}
+
+.footlien3 {
+  display: inline;
+}
+.footlien3 p {
+  margin-block: 0;
+}
+
+.footlien4 {
+  display: inline;
+}
+.footlien4 p {
+  margin-block: 0;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -132,43 +152,39 @@
     margin-block: 0;
     width: 9.554%;
   }
-  .foot__a {
+  .footlien1 {
     position: absolute;
-    height: 1.25rem;
-    text-decoration-line: none;
-    color: white;
+    left: 41.597%;
+    width: 11.67%;
   }
-  .foot__a1 {
+  .footlien1 p {
     position: absolute;
     left: 43.125%;
     width: 11.67%;
+    margin-block: 0;
   }
-  .foot__a2 {
+  .footlien2 {
+    position: absolute;
+    left: 55.28%;
+    margin-block: 0;
+  }
+  .footlien2 p {
     position: absolute;
     left: 56.805%;
+    margin-block: 0;
     width: 11.67%;
   }
-  .foot__a3 {
+  .footlien3 p {
     position: absolute;
     width: 9.027%;
     left: 68.958%;
+    margin-block: 0;
   }
-  .foot__a4 {
+  .footlien4 p {
+    margin-block: 0;
     position: absolute;
     width: 9.027%;
     left: 78.47%;
-  }
-  .foot__svg1 {
-    position: absolute;
-    left: 41.597%;
-    width: 11px;
-    height: 13px;
-  }
-  .foot__svg2 {
-    position: absolute;
-    left: 55.28%;
-    width: 12px;
-    height: 13px;
   }
 }
 .boutonviolet {
