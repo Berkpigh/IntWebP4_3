@@ -12,6 +12,11 @@
     flex-direction: column;
     justify-content: space-around;
     
+    a {
+        text-decoration-line: none;
+        color: white;
+    }
+
     &__titre {
         font-family: myFirstFont;
         font-style: italic;
@@ -23,34 +28,48 @@
         color: white;
         margin-block: 10px;
     }
-
-    &__a1 {
-        text-decoration-line: none;
-        color: white;
-    }
-    &__a2 {
-        text-decoration-line: none;
-        color: white;
-    }    
-    &__a3 {
-        text-decoration-line: none;
-        color: white;
-    }    
-    &__a4 {
-        text-decoration-line: none;
-        color: white;
-    }
-
-    &__svg1 {
-        width: 11px;
-        height: 13px;
-    }
-
-    &__svg2 {
-        width: 12px;
-        height: 13px;
-    }
 }
+.footlien1 {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+
+        p {
+            margin-block: 0;
+        }
+        &__svg1 {
+            width: 11px;
+            height: 13px;
+        }
+}
+.footlien2 {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+
+        p {
+            margin-block: 0;
+        }
+        &__svg1 {
+            width: 12px;
+            height: 13px;
+        }
+}
+.footlien3 {
+        display: inline;
+
+        p {
+            margin-block: 0;
+        }
+}
+.footlien4 {
+        display: inline;
+
+        p {
+            margin-block: 0;
+        }
+    }
+
 @media only screen and (min-width: 1440px) {
     .subfooter__container {
         position: relative;
@@ -77,45 +96,44 @@
             margin-block: 0;
             width: 9.554%;
         }
-        &__a {
-            position: absolute;
-            height: 1.25rem;
-            text-decoration-line: none;
-            color: white;
-        }
-        &__a1 {
-            position: absolute;
-            left: 43.125%;
-            width: 11.67%;
-        }
-        &__a2 {
-            position: absolute;
-            left: 56.805%;
-            width: 11.67%;
-        }
-        &__a3 {
-            position: absolute;
-            width: 9.027%;
-            left: 68.958%;
-        }
-        &__a4 {
-            position: absolute;
-            width: 9.027%;
-            left: 78.47%;
-        }
-    
-        &__svg1 {
+    }
+    .footlien1 {
             position: absolute;
             left: 41.597%;
-            width: 11px;
-            height: 13px;
+            width: 11.67%;
+
+            p {
+                position: absolute;
+                left: 43.125%;
+                width: 11.67%;
+                margin-block: 0;
         }
-    
-        &__svg2 {
+    }
+    .footlien2 {
             position: absolute;
             left: 55.28%;
-            width: 12px;
-            height: 13px;
-        }
+            margin-block: 0;
+            p {
+                position: absolute;
+                left: 56.805%;
+                margin-block: 0;
+                width: 11.67%;
+            }
+    }
+    .footlien3 {
+            p {
+                position: absolute;
+                width: 9.027%;
+                left: 68.958%;
+                margin-block: 0;
+            }
+    }
+    .footlien4 {
+            p {
+                margin-block: 0;
+                position: absolute;
+                width: 9.027%;
+                left: 78.47%;
+            }
     }
 }    
