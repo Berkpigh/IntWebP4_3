@@ -69,6 +69,9 @@
   text-decoration-line: none;
   color: white;
 }
+.foot a p {
+  margin-block: 0.2rem;
+}
 .foot__titre {
   font-family: myFirstFont;
   font-style: italic;
@@ -86,9 +89,6 @@
   justify-content: space-between;
   width: 60%;
 }
-.footlien1 p {
-  margin-block: 0;
-}
 .footlien1__svg1 {
   width: 11px;
   height: 13px;
@@ -99,9 +99,6 @@
   justify-content: space-between;
   width: 50%;
 }
-.footlien2 p {
-  margin-block: 0;
-}
 .footlien2__svg1 {
   width: 12px;
   height: 13px;
@@ -110,15 +107,9 @@
 .footlien3 {
   display: inline;
 }
-.footlien3 p {
-  margin-block: 0;
-}
 
 .footlien4 {
   display: inline;
-}
-.footlien4 p {
-  margin-block: 0;
 }
 
 @media only screen and (min-width: 1440px) {
