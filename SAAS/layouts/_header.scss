@@ -1,15 +1,9 @@
 .landing-entete {
-/*    position: relative;
-    top: 0;
-    left: 0;
-    height: 63px;
-    width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
 
     &__svgfleche {
-        position: absolute;
         top: 18px;
         left: 1.6%;
         width : 4.59%;
@@ -17,6 +11,34 @@
        }
 
     &__svg {
+        line-height: 2.75rem;
+        font-size: 1.875rem;
+        font-family: myFirstFont;
+        font-style: italic;
+        font-weight: 400;
+        text-align: center;
+        color: #101010;
+        margin-block: 0;
+   }
+}
+.landing-entetecartes {
+    position: relative;
+    height: 63px;
+
+    &__fleche {
+        position: absolute;
+        top: 24px;
+        left: 23px;
+        width : 17.2px;
+        height: 1rem;
+       }
+
+    &__svg {
+        position: absolute;
+        top: 14px;
+        left: 28%;
+        width: 43.2%;
+        height: 44px;
         line-height: 2.75rem;
         font-size: 1.875rem;
         font-family: myFirstFont;

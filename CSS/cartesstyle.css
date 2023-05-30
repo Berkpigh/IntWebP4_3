@@ -7,25 +7,44 @@
   src: url(/Shrikhand-Regular.ttf);
 }
 .landing-entete {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 63px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .landing-entete__svgfleche {
-  position: absolute;
   top: 18px;
   left: 1.6%;
   width: 4.59%;
   height: 1rem;
 }
 .landing-entete__svg {
+  line-height: 2.75rem;
+  font-size: 1.875rem;
+  font-family: myFirstFont;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  color: #101010;
+  margin-block: 0;
+}
+
+.landing-entetecartes {
+  position: relative;
+  height: 63px;
+}
+.landing-entetecartes__fleche {
   position: absolute;
-  top: 12px;
-  left: 0;
-  width: 100%;
-  height: 2.75rem;
+  top: 24px;
+  left: 23px;
+  width: 17.2px;
+  height: 1rem;
+}
+.landing-entetecartes__svg {
+  position: absolute;
+  top: 14px;
+  left: 28%;
+  width: 43.2%;
+  height: 44px;
   line-height: 2.75rem;
   font-size: 1.875rem;
   font-family: myFirstFont;
@@ -75,6 +94,9 @@
   text-decoration-line: none;
   color: white;
 }
+.foot a p {
+  margin-block: 0.2rem;
+}
 .foot__titre {
   font-family: myFirstFont;
   font-style: italic;
@@ -92,9 +114,6 @@
   justify-content: space-between;
   width: 60%;
 }
-.footlien1 p {
-  margin-block: 0;
-}
 .footlien1__svg1 {
   width: 11px;
   height: 13px;
@@ -105,9 +124,6 @@
   justify-content: space-between;
   width: 50%;
 }
-.footlien2 p {
-  margin-block: 0;
-}
 .footlien2__svg1 {
   width: 12px;
   height: 13px;
@@ -116,15 +132,9 @@
 .footlien3 {
   display: inline;
 }
-.footlien3 p {
-  margin-block: 0;
-}
 
 .footlien4 {
   display: inline;
-}
-.footlien4 p {
-  margin-block: 0;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -144,7 +154,6 @@
   .foot__titre {
     position: absolute;
     left: 88.549%;
-    height: 1.6875rem;
     line-height: 26.24px;
     font-weight: 400;
     font-size: 1.125rem;
