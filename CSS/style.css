@@ -260,7 +260,7 @@ body {
 .landing-fonctionnement h1 {
   position: absolute;
   top: 48px;
-  left: 15px;
+  left: 20px;
   font-family: "Roboto";
   font-size: 1.5rem;
   font-weight: 700;
@@ -270,21 +270,29 @@ body {
 .landing-fonctionnement__container {
   position: absolute;
   top: 105px;
-  width: 89.34%;
+  width: 100%;
   margin: 0 20px 0 20px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .fonctionart {
-  position: relative;
-  width: 100%;
+  width: 86%;
   height: 8.6vh;
   box-shadow: 0 0 15px -3px;
   border-radius: 20px;
-  margin: 20px 15px 20px 25px;
+  margin: 0 15px 24px 25px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+}
+.fonctionart__cn {
+  position: relative;
+  margin-right: 10px;
+  width: 10px;
+  height: 72.38px;
 }
 .fonctionart span:nth-child(1) {
   position: absolute;
@@ -302,12 +310,14 @@ body {
   height: 11px;
 }
 .fonctionart__symbol {
+  position: relative;
   width: 16px;
   height: 21px;
 }
 .fonctionart__texte {
-  width: 50.66%;
+  width: 80.66%;
   height: 1.3125rem;
+  font-weight: 500;
   white-space: nowrap;
 }
 .fonctionart__a {
