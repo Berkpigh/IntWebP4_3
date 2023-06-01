@@ -281,7 +281,6 @@ body {
   grid-template-columns: 349px 59px;
 }
 .choixart-container:hover {
-  /*display:grid;*/
   grid-template-columns: 290px 59px;
 }
 .choixart-col {
@@ -314,6 +313,12 @@ body {
   line-height: 1.125rem;
   margin-inline-end: 25px;
 }
+.choixart-col:hover {
+  /*background-color: red;*/
+}
+.choixart-col:hover > .choixart-col__lin2 .ellipsis {
+  width: 250px;
+}
 .choixart-col2 {
   position: relative;
   background: #99E2D0;
@@ -329,7 +334,6 @@ body {
 
 .ellipsis {
   text-overflow: ellipsis;
-  width: 250px;
   white-space: nowrap;
   overflow: hidden;
 }

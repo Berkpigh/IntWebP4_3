@@ -98,13 +98,12 @@ body {
     &-container {
         display:grid;
         grid-template-columns: 349px 59px;
-    }
 
+    }
     &-container:hover {
-        /*display:grid;*/
         grid-template-columns: 290px 59px;
     }
-    
+
     &-col {
         display:flex;
         flex-direction: column;
@@ -138,6 +137,13 @@ body {
             }
         }
     }
+    &-col:hover {
+            /*background-color: red;*/
+
+            & > .choixart-col__lin2 .ellipsis {
+                width: 250px;
+            }
+        }
 
     &-col2 {
         position: relative;
@@ -155,7 +161,6 @@ body {
 }
 .ellipsis {
     text-overflow: ellipsis;
-    width:250px;
     white-space: nowrap;
     overflow: hidden;
 }
