@@ -39,39 +39,32 @@ body {
     }
 }
 .landing-choixmenu {
-    position: relative;
     width: 100%;
     height: 34.17vh;
-    text-align: center;
     background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
     
     &__p1 {
-        position: absolute;
-        top: 39.5px;
-        height: 8.1vh;
-        left: 13.33%;
-        width: 73.33%;
         font-size: 1.5rem;
         font-weight: 700;
         margin-block: 0;
-        
+        text-align: center;
+        width: 73.33%;
     }
     
     &__p2 {
-        position: absolute;
-        top: 107.5px;
-        height: 5.48vh;
-        left: 9.07%;
-        width: 84%;
         font-size: 1.125rem;
         font-weight: 300;
-        line-height: 1.32rem;        
         margin-block: 0;
+        text-align: center;
+        width: 84%;
+        /*line-height: 1.32rem;        */
     }
     &__btn {
-        position: absolute;
-        top: 193.5px;
-        left: 20.94%;
         width: 58.14%;
     }
 }
