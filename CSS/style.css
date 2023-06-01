@@ -300,7 +300,7 @@ body {
   top: 19px;
   height: 35px;
   width: 35px;
-  line-height: 20px;
+  /*line-height: 20px;*/
 }
 .fonctionart__no {
   position: absolute;
@@ -457,6 +457,8 @@ body {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .landing-fonctionnement .fonctionart span:nth-child(1) {
     position: absolute;
@@ -481,10 +483,7 @@ body {
     height: 20px;
   }
   .landing-fonctionnement .fonctionart__texte {
-    position: absolute;
-    left: 25.78%;
-    top: 28.59px;
-    width: 65.42%;
+    width: 75%;
     height: 0.9793rem;
     white-space: nowrap;
   }
