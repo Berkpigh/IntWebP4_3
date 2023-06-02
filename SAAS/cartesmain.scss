@@ -106,8 +106,7 @@ body {
         }
     }
      &-col:hover .choixart-col__lin2 {
-        width: 250px;
-
+        width: 280px;
     }
  
     &-col {
@@ -159,7 +158,7 @@ body {
      &__col2 {
          position: relative;
          background: #99E2D0;
-         transform: scale(0);
+         transform: scale(1);
         }
 
      &__svg {
