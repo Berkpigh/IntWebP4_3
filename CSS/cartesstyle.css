@@ -263,25 +263,19 @@ body {
   margin-bottom: 12px;
   border-radius: 15.0431px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-  /*     &-container {
-         width: 100%;
-      } */
-  /*
-  > choixart-flag__col2 {
-      transform: translateX(-59px);
-      transition: transform 1000ms ease-in-out;
-  }
-  */
 }
 .choixart-container:hover + .choixart-flag {
-  /*background-color: red;*/
-  transform: translateX(-59px);
+  background-color: red;
+  transform: translatex(-59px);
   transition: transform 1000ms ease-in-out;
   background: #99E2D0;
 }
 .choixart-container:hover + .choixart-flag > .choixart-flag__col2 {
   transform: scale(1);
   transition: transform 1000ms ease-in-out;
+}
+.choixart-col:hover .choixart-col__lin2 {
+  width: 250px;
 }
 .choixart-col {
   display: flex;
@@ -314,12 +308,6 @@ body {
   line-height: 1.125rem;
   margin-inline-end: 15px;
 }
-.choixart-col:hover {
-  /*background-color: red;*/
-}
-.choixart-col:hover > .choixart-col__lin2 .ellipsis {
-  width: 200px;
-}
 
 .choixart-flag {
   position: absolute;
@@ -328,12 +316,13 @@ body {
   width: 59px;
   height: 69px;
   border-radius: 0 15px 15px 0;
-  background: white;
-  display: inline;
+  background: none;
   transform: translatex(0);
+  display: inline;
 }
 .choixart-flag__col2 {
   position: relative;
+  background: #99E2D0;
   transform: scale(0);
 }
 .choixart-flag__svg {
