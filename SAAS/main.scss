@@ -130,10 +130,16 @@ body {
         height: 11px;
     }
     &__symbol {
-        position: relative;
         width: 16px;
         height: 21px;
+        display: inline;
     }
+    &__symbolh {
+        width: 16px;
+        height: 21px;
+        display: none;
+        transform: translateX(0);
+    }    
     &__texte {
         width: 80.66%;
         height: 1.3125rem;
@@ -143,6 +149,13 @@ body {
     &__a {
         color: black;
         text-decoration: none;
+    }
+    &:hover > .fonctionart__symbol {
+        display: none;
+    }
+    &:hover > .fonctionart__symbolh {
+        transform: translateX(-8px);
+        display: inline;
     }
 }
 #main {

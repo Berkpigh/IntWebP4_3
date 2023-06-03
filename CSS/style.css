@@ -306,9 +306,15 @@ body {
   height: 11px;
 }
 .fonctionart__symbol {
-  position: relative;
   width: 16px;
   height: 21px;
+  display: inline;
+}
+.fonctionart__symbolh {
+  width: 16px;
+  height: 21px;
+  display: none;
+  transform: translateX(0);
 }
 .fonctionart__texte {
   width: 80.66%;
@@ -319,6 +325,13 @@ body {
 .fonctionart__a {
   color: black;
   text-decoration: none;
+}
+.fonctionart:hover > .fonctionart__symbol {
+  display: none;
+}
+.fonctionart:hover > .fonctionart__symbolh {
+  transform: translateX(-8px);
+  display: inline;
 }
 
 #main {
