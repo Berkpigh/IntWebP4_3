@@ -70,4 +70,29 @@
             width : 13.89%;
        }
     }    
+    .landing-entetecartes {
+        position: relative;
+        height: 63px;
+    
+        &__fleche {
+            position: absolute;
+            top: 24px;
+            left: 23px;
+            width : 17.2px;
+            height: 1rem;
+           }
+    
+        &__svg {
+            position: absolute;
+            left: 42.986%;
+            width: 13.888%;
+            height: 2.1375rem;
+            font-size: 1.875rem;
+            font-family: myFirstFont;
+            font-style: italic;
+            font-weight: 400;
+            text-align: center;
+            color: #101010;
+       }
+    }
 }
