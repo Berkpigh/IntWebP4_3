@@ -179,72 +179,6 @@ body {
 .choixart, p {
     margin-block: 0;
 }
-/*
-    &-desc {
-        position: absolute;
-        left: 4.30%;
-        width: 93.06%;
-        display: block;
-        text-decoration: none;
-
-        &__titre {
-            height: 1.3125rem;
-            margin: 12px 0 5px 0;
-
-            h2 {
-                margin-block: 0;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 1.125rem;
-                line-height: 1.3125rem;
-                color: black;
-            }
-        }
-
-        &__flex {
-            white-space: nowrap;
-            display:flex;
-            justify-content: space-between;
-        }
-
-        &__gout {
-            font-size: 0.94rem;
-            margin-block: 0;
-        }
-
-        &__prix {
-            font-weight: 700;
-            font-size: 0.94rem;
-            line-height: 1.125rem;
-            margin-block: 0;
-            margin-inline-end: 25px;
-        }
-        &:hover {
-            & + .choixart-l2choix {
-
-            }
-        }
-    }
-    &__btn {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 0px;
-        width: 0px;
-        background: #99E2D0;
-        border-radius: 0 15px 15px 0;
-    }
-
-    &__svg {
-        position: absolute;
-        top: 25px;
-        left: 20px;
-        width: 20px;
-        height: 20px;
-    }
-*/
-
 
 #plats {
     height: 311px;
@@ -253,7 +187,6 @@ body {
 .plats-container {
     margin: 0 13px 12px 13px;
     width: 93.06%;
-    height: 310px;
     display: flex;
     flex-wrap: wrap;
     
