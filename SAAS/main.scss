@@ -151,11 +151,9 @@ body {
         text-decoration: none;
     }
     &:hover > .fonctionart__symbol {
-        display: none;
-    }
-    &:hover > .fonctionart__symbolh {
-        transform: translateX(-8px);
-        display: inline;
+        > .fonctionart__fillsymbol {
+            fill: #9356DC;
+        }
     }
 }
 #main {
