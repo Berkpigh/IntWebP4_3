@@ -435,6 +435,13 @@ body {
     height: 830.66px;
     width: 100%;
   }
+  .choixart-flag {
+    position: absolute;
+    left: 634px;
+  }
+  .choixart-col:hover .choixart-col__lin2 {
+    width: 550px;
+  }
   .landingresto {
     position: relative;
     height: 757px;

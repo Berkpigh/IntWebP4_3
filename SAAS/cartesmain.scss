@@ -99,14 +99,14 @@ body {
         background-color: red;
         transform: translatex(-59px);
         transition: transform 1000ms ease-in-out;
-        background: #99E2D0;
+        background: $col-lightgreen;
         > .choixart-flag__col2 {
             transform: scale(1);
             transition: transform 1000ms ease-in-out;
         }
     }
-     &-col:hover .choixart-col__lin2 {
-        width: 280px;
+    &-col:hover .choixart-col__lin2 {
+        width: $choixartlin2;
     }
  
     &-col {
@@ -157,7 +157,7 @@ body {
 
      &__col2 {
          position: relative;
-         background: #99E2D0;
+         background: $col-lightgreen;
          transform: scale(1);
         }
 
@@ -238,6 +238,15 @@ body {
     #landing {
         height: 830.66px;
         width: 100%;
+    }
+    .choixart-flag {
+        position: absolute;
+        left: 634px;
+    }
+    .choixart {
+        &-col:hover .choixart-col__lin2 {
+            width: $choixartlin2desktop;
+        }
     }
     .landingresto {
         position: relative;
