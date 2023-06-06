@@ -152,7 +152,7 @@ body {
     }
     &:hover > .fonctionart__symbol {
         > .fonctionart__fillsymbol {
-            fill: #9356DC;
+            fill: $col-violet;
         }
     }
 }
@@ -242,8 +242,8 @@ body {
         height: 21px;
 
         &:hover  #restodesc__3-1-linear1 {
-            --color-stop: #9356DC;
-            --color-bot: #FF79DA;
+            --color-stop: #{$col-violet};
+            --color-bot: #{$col-pink};
         }
         
         &_coeur {
@@ -253,8 +253,8 @@ body {
     }
 }
 #restodesc__3-1-linear1 {
-    --color-stop: #FFF;
-    --color-bot: #FFF;
+    --color-stop: #{$col-white};
+    --color-bot: #{$col-white};
 }
 /* ---  2   --- */
 #restodesc__3 {
@@ -267,8 +267,8 @@ body {
         height: 21px;
 
         &:hover  #restodesc__3-2-linear2 {
-            --color-stop: #9356DC;
-            --color-bot: #FF79DA;
+            --color-stop: #{$col-violet};
+            --color-bot: #{$col-pink};
         }
         
         &_coeur {
@@ -278,8 +278,8 @@ body {
     }
 }
 #restodesc__3-2-linear2 {
-    --color-stop: #FFF;
-    --color-bot: #FFF;
+    --color-stop: #{$col-white};
+    --color-bot: #{$col-white};
 }
 /* ---  3   --- */
 #restodesc__3 {
@@ -292,8 +292,8 @@ body {
         height: 21px;
 
         &:hover  #restodesc__3-3-linear3 {
-            --color-stop: #9356DC;
-            --color-bot: #FF79DA;
+            --color-stop: #{$col-violet};
+            --color-bot: #{$col-pink};
         }
         
         &_coeur {
@@ -303,8 +303,8 @@ body {
     }
 }
 #restodesc__3-3-linear3 {
-    --color-stop: #FFF;
-    --color-bot: #FFF;
+    --color-stop: #{$col-white};
+    --color-bot: #{$col-white};
 }
 /* ---  4   --- */
 #restodesc__3 {
@@ -317,8 +317,8 @@ body {
         height: 21px;
 
         &:hover  #restodesc__3-4-linear4 {
-            --color-stop: #9356DC;
-            --color-bot: #FF79DA;
+            --color-stop: #{$col-violet};
+            --color-bot: #{$col-pink};
         }
         
         &_coeur {
@@ -328,8 +328,8 @@ body {
     }
 }
 #restodesc__3-4-linear4 {
-    --color-stop: #FFF;
-    --color-bot: #FFF;
+    --color-stop: #{$col-white};
+    --color-bot: #{$col-white};
 }
 
 @media only screen and (min-width: 1440px) {
