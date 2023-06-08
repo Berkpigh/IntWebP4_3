@@ -234,13 +234,13 @@ body {
 }
 
 #landing {
-  height: 694px;
+  height: 730px;
   width: 100%;
 }
 
 .landingresto {
   position: relative;
-  height: 620px;
+  height: 650px;
 }
 .landingresto__img {
   height: 275px;
@@ -250,7 +250,7 @@ body {
 .landingresto-container {
   position: absolute;
   top: 220px;
-  height: 410px;
+  height: 450px;
   width: 100%;
   background: #F7F7F7;
   border-radius: 25px 25px 0 0;
@@ -258,18 +258,17 @@ body {
 .landingresto-container-titre {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .landingresto-container-titre__nom {
   font-family: myFirstFont;
   font-weight: 400;
   font-style: italic;
   font-size: 1.75rem;
-  line-Height: 2.55rem;
 }
 .landingresto-container-titre__coeur {
   width: 5.87%;
   height: 21px;
-  line-Height: 2.55rem;
   margin-block: 2rem;
 }
 .landingresto-container__entrees {
