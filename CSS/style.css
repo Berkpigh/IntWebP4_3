@@ -16,9 +16,10 @@
 .landing-entete__svg {
   line-height: 2.75rem;
   font-size: 1.875rem;
-  font-family: myFirstFont;
+  /*font-family: myFirstFont;*/
+  font-family: Shrikhand;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   color: #101010;
   margin-block: 0;
