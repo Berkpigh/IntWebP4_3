@@ -259,6 +259,7 @@ body {
 .landingresto-container-titre {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .landingresto-container-titre__nom {
   font-family: myFirstFont;
