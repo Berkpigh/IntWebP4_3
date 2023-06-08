@@ -28,11 +28,71 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
+/* --- Tous sauf enchantée --- */
 #landing {
-    height: 730px;
+    height: 694px;
     width: 100%;
 }
 .landingresto {
+    position: relative;
+    height: 620px;
+
+    &__img {
+        height: 275px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &-container {
+        position: absolute;
+        top: 220px;
+        height: 410px;
+        width: 100%;
+        background: #F7F7F7;
+        border-radius: 25px 25px 0 0;
+
+        &-titre {
+        display: flex;
+        justify-content: space-around;
+
+            &__nom {
+                font-family: myFirstFont;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 1.75rem;
+                line-Height: 2.55rem;
+            }
+
+            &__coeur {
+                width: 5.87%;
+                height: 21px;
+                line-Height: 2.55rem;
+                margin-block: 2rem;
+            }
+        }
+        &__entrees {
+            margin: 0 13px 12px 13px;
+            width: 93.06%;
+            display: flex;
+            flex-wrap: wrap;
+            
+            h1 {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                line-height: 1.1875rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+       
+}
+/* --- Spécial note enchantée --- */
+#landingne {
+    height: 730px;
+    width: 100%;
+}
+.landingrestone {
     position: relative;
     height: 650px;
 
@@ -83,8 +143,8 @@ body {
             }
         }
     }
-       
 }
+/* --- Fin spécial Note Enchantée --- */
 .choixart {
     position: relative;
     width: 100%;
