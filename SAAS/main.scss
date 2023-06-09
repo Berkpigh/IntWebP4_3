@@ -241,7 +241,7 @@ body {
         width: 23px;
         height: 21px;
 
-        &:hover  #restodesc__3-1-linear1 {
+        &:active  #restodesc__3-1-linear1 {
             --color-stop: #{$col-violet};
             --color-bot: #{$col-pink};
         }
@@ -266,7 +266,7 @@ body {
         width: 23px;
         height: 21px;
 
-        &:hover  #restodesc__3-2-linear2 {
+        &:active  #restodesc__3-2-linear2 {
             --color-stop: #{$col-violet};
             --color-bot: #{$col-pink};
         }
@@ -291,7 +291,7 @@ body {
         width: 23px;
         height: 21px;
 
-        &:hover  #restodesc__3-3-linear3 {
+        &:active  #restodesc__3-3-linear3 {
             --color-stop: #{$col-violet};
             --color-bot: #{$col-pink};
         }
@@ -316,7 +316,7 @@ body {
         width: 23px;
         height: 21px;
 
-        &:hover  #restodesc__3-4-linear4 {
+        &:active  #restodesc__3-4-linear4 {
             --color-stop: #{$col-violet};
             --color-bot: #{$col-pink};
         }

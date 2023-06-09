@@ -44,7 +44,7 @@
   height: 44px;
   line-height: 2.75rem;
   font-size: 1.875rem;
-  font-family: myFirstFont;
+  font-family: Shrikhand;
   font-style: italic;
   font-weight: 400;
   text-align: center;
@@ -89,7 +89,7 @@
     width: 13.888%;
     height: 2.1375rem;
     font-size: 1.875rem;
-    font-family: myFirstFont;
+    font-family: Shrikhand;
     font-style: italic;
     font-weight: 400;
     text-align: center;
@@ -106,7 +106,8 @@
 .footlogo {
   /*height: 27px;*/
   width: 137.58px;
-  font-family: myFirstFont;
+  /*font-family: myFirstFont;*/
+  font-family: Shrikhand;
   font-style: italic;
   width: 26.14%;
   /*height: 1.6875rem;*/
@@ -436,7 +437,7 @@ body {
   width: 23px;
   height: 21px;
 }
-#restodesc__3-1:hover #restodesc__3-1-linear1 {
+#restodesc__3-1:active #restodesc__3-1-linear1 {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
 }
@@ -459,7 +460,7 @@ body {
   width: 23px;
   height: 21px;
 }
-#restodesc__3-2:hover #restodesc__3-2-linear2 {
+#restodesc__3-2:active #restodesc__3-2-linear2 {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
 }
@@ -482,7 +483,7 @@ body {
   width: 23px;
   height: 21px;
 }
-#restodesc__3-3:hover #restodesc__3-3-linear3 {
+#restodesc__3-3:active #restodesc__3-3-linear3 {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
 }
@@ -505,7 +506,7 @@ body {
   width: 23px;
   height: 21px;
 }
-#restodesc__3-4:hover #restodesc__3-4-linear4 {
+#restodesc__3-4:active #restodesc__3-4-linear4 {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
 }
