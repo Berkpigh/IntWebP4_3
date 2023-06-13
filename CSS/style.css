@@ -385,6 +385,37 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.restos__container-progress {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  height: 200px;
+  width: 100px;
+}
+.restos__container-progress__top, .restos__container-progress__bottom {
+  background-color: #dbdcef;
+  background-image: linear-gradient(#474bff, #474bff);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.restos__container-progress__top {
+  background-position: 0 0;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+.restos__container-progress__bottom {
+  background-position: 0 100px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.restos__container-progress__bottom::after {
+  content: "";
+  position: absolute;
+  width: 2.2px;
+  height: 100px;
+  left: 50px;
+  background-image: linear-gradient(#474bff, transparent);
+}
 
 .restoart {
   position: relative;
@@ -398,6 +429,16 @@ body {
   height: 231px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
+}
+.restoart a:active > .restos__container-progress {
+  animation: progress-qm7mjxmd 2s ease infinite;
+  animation-duration: 10000ms;
+}
+.restoart a:active > .restos__container-progress__top {
+  animation: progress-sn28olmd 2s ease infinite;
+}
+.restoart a:active > .restos__container-progress__bottom {
+  animation: progress-jxmr0amd 2s ease infinite;
 }
 
 .restodesc {
@@ -520,6 +561,63 @@ body {
   --color-bot: #ffffff;
 }
 
+/* ---  L o a d e r  --- */
+/*
+<div class="progress">
+  <div class="top"></div>
+  <div class="bottom"></div>
+</div>
+
+.top,
+.bottom {
+   background-color: #dbdcef;
+   background-image: linear-gradient(#474bff, #474bff);
+   background-size: 44.8px 44.8px;
+   background-repeat: no-repeat;
+   width: 44.8px;
+   height: 44.8px;
+}
+
+.top {
+   background-position: 0 0;
+   animation: progress-sn28olmd 2s ease infinite;
+   clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.bottom {
+   background-position: 0 44.8px;
+   animation: progress-jxmr0amd 2s ease infinite;
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.bottom::after {
+   content: "";
+   position: absolute;
+   width: 2.2px;
+   height: 44.8px;
+   left: 21.299999999999997px;
+   background-image: linear-gradient(#474bff, transparent);
+}
+*/
+@keyframes progress-sn28olmd {
+  95%, 100% {
+    background-position: 0 100px;
+  }
+}
+@keyframes progress-jxmr0amd {
+  95%, 100% {
+    background-position: 0 0;
+  }
+}
+@keyframes progress-qm7mjxmd {
+  0%, 95% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+/* ---  F i n  l o a d e r  --- */
 @media only screen and (min-width: 1440px) {
   body {
     width: 1440px;

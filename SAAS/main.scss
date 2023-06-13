@@ -185,8 +185,40 @@ body {
         margin: 10px 14.5px  10px 14.5px;
         display: flex;
         flex-wrap: wrap;
-    }
 
+        &-progress {
+            position: absolute;
+            top: 0;
+            left: 35%;         
+            height: $loaderph;
+            width: $loaderpw;
+            
+            &__top, &__bottom {
+                background-color: #dbdcef;
+                background-image: linear-gradient(#474bff, #474bff);
+                background-size: $loadertopbot $loadertopbot;
+                background-repeat: no-repeat;
+                width: $loadertopbot;
+                height: $loadertopbot;                
+            }
+            &__top {
+                background-position: 0 0;
+                clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+            }
+            &__bottom {
+                background-position: 0 $loadertopbot;
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);                
+            }
+            &__bottom::after {
+                content: "";
+                position: absolute;
+                width: 2.2px;
+                height: $loadertopbot;
+                left: $loaderbotleft;
+                background-image: linear-gradient(#474bff, transparent);
+             }
+        }
+    }
 }
 .restoart {
     position: relative;
@@ -201,6 +233,19 @@ body {
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
+
+    a:active {
+        > .restos__container-progress {
+            animation: progress-qm7mjxmd 2s ease infinite;
+            animation-duration: 10000ms;
+            &__top {
+                animation: progress-sn28olmd 2s ease infinite;
+            }
+            &__bottom {
+                animation: progress-jxmr0amd 2s ease infinite;
+            }
+        }
+    } 
 }
 .restodesc {
     position: relative;
@@ -331,6 +376,67 @@ body {
     --color-stop: #{$col-white};
     --color-bot: #{$col-white};
 }
+/* ---  L o a d e r  --- */
+/*
+<div class="progress">
+  <div class="top"></div>
+  <div class="bottom"></div>
+</div>
+
+.top,
+.bottom {
+   background-color: #dbdcef;
+   background-image: linear-gradient(#474bff, #474bff);
+   background-size: 44.8px 44.8px;
+   background-repeat: no-repeat;
+   width: 44.8px;
+   height: 44.8px;
+}
+
+.top {
+   background-position: 0 0;
+   animation: progress-sn28olmd 2s ease infinite;
+   clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.bottom {
+   background-position: 0 44.8px;
+   animation: progress-jxmr0amd 2s ease infinite;
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.bottom::after {
+   content: "";
+   position: absolute;
+   width: 2.2px;
+   height: 44.8px;
+   left: 21.299999999999997px;
+   background-image: linear-gradient(#474bff, transparent);
+}
+*/
+
+@keyframes progress-sn28olmd {
+   95%, 100% {
+      background-position: 0 $loadertopbot;
+   }
+}
+
+@keyframes progress-jxmr0amd {
+   95%, 100% {
+      background-position: 0 0;
+   }
+}
+
+@keyframes progress-qm7mjxmd {
+   0%, 95% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(180deg);
+   }
+}
+/* ---  F i n  l o a d e r  --- */
 
 @media only screen and (min-width: 1440px) {
     body {

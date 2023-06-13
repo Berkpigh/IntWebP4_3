@@ -20,7 +20,8 @@
 .landing-entete__svg {
   line-height: 2.75rem;
   font-size: 1.875rem;
-  font-family: myFirstFont;
+  /*font-family: myFirstFont;*/
+  font-family: Shrikhand;
   font-style: italic;
   font-weight: 400;
   text-align: center;
@@ -47,7 +48,7 @@
   height: 44px;
   line-height: 2.75rem;
   font-size: 1.875rem;
-  font-family: myFirstFont;
+  font-family: Shrikhand;
   font-style: italic;
   font-weight: 400;
   text-align: center;
@@ -92,7 +93,7 @@
     width: 13.888%;
     height: 2.1375rem;
     font-size: 1.875rem;
-    font-family: myFirstFont;
+    font-family: Shrikhand;
     font-style: italic;
     font-weight: 400;
     text-align: center;
@@ -109,7 +110,8 @@
 .footlogo {
   /*height: 27px;*/
   width: 137.58px;
-  font-family: myFirstFont;
+  /*font-family: myFirstFont;*/
+  font-family: Shrikhand;
   font-style: italic;
   width: 26.14%;
   /*height: 1.6875rem;*/
@@ -491,6 +493,10 @@ body {
     height: 830.66px;
     width: 100%;
   }
+  #landingne {
+    height: 911.66px;
+    width: 100%;
+  }
   .choixart-flag {
     position: absolute;
     left: 634px;
@@ -547,9 +553,61 @@ body {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    line-height: 1.1875rem;
     text-transform: uppercase;
   }
+  /* --- Spécial NoteEnchantée --- */
+  .landingrestone {
+    position: relative;
+    height: 838px;
+  }
+  .landingrestone__img {
+    height: 393px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .landingrestone-container {
+    position: absolute;
+    top: 343px;
+    height: 526px;
+    width: 73.2638%;
+    background: #F7F7F7;
+    border-radius: 25px 25px 0 0;
+    margin: 0 13.4027% 0 13.4027%;
+  }
+  .landingrestone-container-titre {
+    height: 131px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landingrestone-container-titre__nom {
+    font-family: myFirstFont;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.75rem;
+    width: 24.7393%;
+  }
+  .landingrestone-container-titre__coeur {
+    width: 2.085%;
+    height: 21px;
+    margin-block: 2rem;
+    margin-left: 24px;
+  }
+  .landingrestone-container__entrees {
+    /*margin-bottom: 12px;*/
+    width: 60.094%;
+    /*height: 310px;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 19.952% 0 19.952%;
+  }
+  .landingrestone-container__entrees h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  /* --- F I N  Spécial NoteEnchantée --- */
   #plats {
     height: 311px;
     width: 73.263%;
