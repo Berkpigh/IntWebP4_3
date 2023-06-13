@@ -178,7 +178,7 @@ body {
                 max-width: 600px;
                 white-space: nowrap;
                 margin: 0;
-                padding: 8px 0 0 0;
+                padding-top: 5px;
                 width: 287px;
 /*
                 overflow: hidden;
@@ -188,7 +188,7 @@ body {
 
             p {
                 margin: 0;
-                padding:0;
+                padding-top: 5px;
                 font-size: 0.9375em;
                 font-weight: 500;
                 padding-bottom: 5px;
@@ -223,7 +223,6 @@ body {
             display: flex;
             align-items:flex-end;
             justify-content: center;
-            padding-bottom: 15px ;
             width: 27px;
             margin: 0 8px 0 8px;
             p {
