@@ -292,7 +292,7 @@ body {
 
 /* --- Spécial note enchantée --- */
 #landingne {
-  height: 730px;
+  height: 770px;
   width: 100%;
 }
 
@@ -308,7 +308,7 @@ body {
 .landingrestone-container {
   position: absolute;
   top: 220px;
-  height: 450px;
+  height: 490px;
   width: 100%;
   background: #F7F7F7;
   border-radius: 25px 25px 0 0;
