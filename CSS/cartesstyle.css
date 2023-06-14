@@ -100,7 +100,7 @@
     color: #101010;
   }
 }
-.subfooter__container {
+#subfooter__container {
   position: relative;
   width: 100%;
   height: 186px;
@@ -170,7 +170,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .subfooter__container {
+  #subfooter__container {
     position: relative;
     width: 100%;
     height: 114px;
@@ -472,13 +472,13 @@ body {
   height: 20px;
 }
 
-.commande {
+#commande {
   position: relative;
   width: 100%;
   height: 80px;
   background: #F7F7F7;
 }
-.commande__btn {
+#commande__btn {
   position: absolute;
   top: 0;
   width: 49.6%;
@@ -624,14 +624,14 @@ body {
     margin: 0 19.952% 0 19.952%;
     width: 60.094%;
   }
-  .commande {
+  #commande {
     position: relative;
     width: 73.263%;
     height: 80px;
     margin: 0 13.368% 0 13.368%;
     background: #F7F7F7;
   }
-  .commande__btn {
+  #commande__btn {
     position: absolute;
     top: 0;
     width: 14.597%;
