@@ -1,0 +1,41 @@
+.container {
+    background-color: #fff;
+    position: fixed;
+    @include poisition-0;
+    z-index: 10;
+    visibility: hidden;
+    animation: loading 35 * $duration linear backwards; 
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    @include flex-center;
+    flex-direction: column;
+    gap: 100px;
+    &-element {
+        @include flex-center;
+        gap:35px;
+        &-1 {
+            @include flex-center;
+                i {
+                    font-size: 10em;
+                    color: #ffffff;
+                    animation: spin 7 * $duration 6 ease-in-out alternate-reverse;
+                }
+            }
+            &-2 {
+                @include flex-center;
+                i {
+                    font-size: 10em;
+                    color: #ffffff;
+                    animation: spin-revert  7 * $duration 6 ease-in-out alternate-reverse;
+                }
+            }
+    }
+    &-text {
+        font-family: 'Shrikhand';
+        font-size: 1.75em;
+        font-weight: 400; 
+    }
+}
