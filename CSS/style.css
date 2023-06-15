@@ -2,6 +2,127 @@
   font-family: myFirstFont;
   src: url(/Shrikhand-Regular.ttf);
 }
+@keyframes fill-up {
+  0% {
+    background-position: 0 -10px;
+    opacity: 0;
+  }
+  100% {
+    background-position: 0 -40px;
+    opacity: 1;
+  }
+}
+@keyframes drain-out {
+  0% {
+    background-position: 0 -40px;
+    opacity: 1;
+  }
+  100% {
+    background-position: 0 -10px;
+    opacity: 0;
+  }
+}
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+    color: #9356DC;
+  }
+  50% {
+    color: #008766;
+  }
+  100% {
+    transform: rotate(25deg);
+    color: #9356DC;
+  }
+}
+@keyframes spin-revert {
+  0% {
+    transform: rotate(0);
+    color: #9356DC;
+  }
+  50% {
+    color: #008766;
+  }
+  100% {
+    transform: rotate(-25deg);
+    color: #9356DC;
+  }
+}
+@keyframes loading {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.container {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  visibility: hidden;
+  animation: loading 3500ms linear backwards;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.loader-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+.loader-element-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader-element-1 i {
+  font-size: 10em;
+  color: #ffffff;
+  animation: spin 700ms 6 ease-in-out alternate-reverse;
+}
+.loader-element-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader-element-2 i {
+  font-size: 10em;
+  color: #ffffff;
+  animation: spin-revert 700ms 6 ease-in-out alternate-reverse;
+}
+.loader-text {
+  font-family: "Shrikhand";
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
 .landing-entete {
   display: flex;
   justify-content: center;
@@ -228,10 +349,6 @@ body {
   margin: auto;
   font-family: Roboto;
   font-weight: 500;
-}
-
-#restoloader {
-  height: 2252px;
 }
 
 .landing-restaurant {
