@@ -447,14 +447,14 @@ body {
   position: absolute;
   left: -18px;
   top: 19px;
-  height: 35px;
-  width: 35px;
+  height: 24px;
+  width: 24px;
   /*line-height: 20px;*/
 }
 .fonctionart__no {
   position: absolute;
-  left: 14px;
-  top: 14px;
+  left: 8px;
+  top: 6px;
   width: 8px;
   height: 11px;
 }
@@ -607,6 +607,9 @@ body {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
 }
+#restodesc__3-1:active #restodesc__3-1_coeur {
+  stroke: none;
+}
 #restodesc__3-1_coeur {
   fill: url(#restodesc__3-1-linear1);
   stroke: #000;
@@ -629,6 +632,9 @@ body {
 #restodesc__3-2:active #restodesc__3-2-linear2 {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
+}
+#restodesc__3-2:active #restodesc__3-2_coeur {
+  stroke: none;
 }
 #restodesc__3-2_coeur {
   fill: url(#restodesc__3-2-linear2);
@@ -653,6 +659,9 @@ body {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
 }
+#restodesc__3-3:active #restodesc__3-3_coeur {
+  stroke: none;
+}
 #restodesc__3-3_coeur {
   fill: url(#restodesc__3-3-linear3);
   stroke: #000;
@@ -675,6 +684,9 @@ body {
 #restodesc__3-4:active #restodesc__3-4-linear4 {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
+}
+#restodesc__3-4:active #restodesc__3-4_coeur {
+  stroke: none;
 }
 #restodesc__3-4_coeur {
   fill: url(#restodesc__3-4-linear4);
