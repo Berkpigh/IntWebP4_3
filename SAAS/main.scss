@@ -297,17 +297,19 @@ body {
         &:hover {
             #restodesc__3-1_coeur {
                 stroke: #f7f7f7;
+                opacity: 1;
                 #restodesc__3-1-linear1 {
                     --color-stop: #{$col-violet};
+                    --color-med: #000;
                     --color-bot: #{$col-pink};
                 }
             }
         }
-        &:hover {
+       /* &:hover {
             &::after {
                 opacity: 1;
             }
-        }
+        }*/
         
         &_coeur {
             width: 23px;
@@ -328,37 +330,42 @@ body {
 }
 #restodesc__3-1-linear1 {
     --color-stop: #FFF;
+    /*--color-med: #FFF;*/
     --color-bot: #FFF;
 }
-/*
-#restodesc__3-1-linear1 {
-    --color-stop: #{$col-white};
-    --color-bot: #{$col-white};
-}
-*/
 /* ---   2   --- */
 #restodesc__3 {
     &-2 {
-        position: absolute;
-        top: 18px;
-        left: 18px;
-        grid-column: 2/3;
+        position: relative;
         width: 23px;
         height: 21px;
 
-        &:active  {
-            #restodesc__3-2-linear2 {
-                --color-stop: #{$col-violet};
-                --color-bot: #{$col-pink};
-            }
+        &:hover {
             #restodesc__3-2_coeur {
-                stroke: none;
+                stroke: #f7f7f7;
+                background-color: linear-gradient (bottom to top, $col-violet, $col-pink);
+            }
+        }
+        &:hover {
+            &::after {
+                opacity: 1;
             }
         }
         
         &_coeur {
-            fill: url(#restodesc__3-2-linear2);
+            width: 23px;
+            height: 21px;
+            z-index: 1;
+            background-color: linear-gradient (bottom to top, #FFF, #FFF);
             stroke: #000;
+            transition: all 10 * $duration;
+        }
+
+        &::after {
+            @include pseudo-elem-after;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 10s;
         }
     }
 }

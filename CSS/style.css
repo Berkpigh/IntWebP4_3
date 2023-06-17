@@ -639,16 +639,20 @@ body {
   position: relative;
   width: 23px;
   height: 21px;
+  /* &:hover {
+       &::after {
+           opacity: 1;
+       }
+   }*/
 }
 #restodesc__3-1:hover #restodesc__3-1_coeur {
   stroke: #f7f7f7;
+  opacity: 1;
 }
 #restodesc__3-1:hover #restodesc__3-1_coeur #restodesc__3-1-linear1 {
   --color-stop: #9356dc;
+  --color-med: #000;
   --color-bot: #FF79DA;
-}
-#restodesc__3-1:hover::after {
-  opacity: 1;
 }
 #restodesc__3-1_coeur {
   width: 23px;
@@ -672,34 +676,41 @@ body {
 
 #restodesc__3-1-linear1 {
   --color-stop: #FFF;
+  /*--color-med: #FFF;*/
   --color-bot: #FFF;
 }
 
-/*
-#restodesc__3-1-linear1 {
-    --color-stop: #ffffff;
-    --color-bot: #ffffff;
-}
-*/
 /* ---   2   --- */
 #restodesc__3-2 {
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  grid-column: 2/3;
+  position: relative;
   width: 23px;
   height: 21px;
 }
-#restodesc__3-2:active #restodesc__3-2-linear2 {
-  --color-stop: #9356dc;
-  --color-bot: #FF79DA;
+#restodesc__3-2:hover #restodesc__3-2_coeur {
+  stroke: #f7f7f7;
+  background-color: linear-gradient bottom to top, #9356dc, #FF79DA;
 }
-#restodesc__3-2:active #restodesc__3-2_coeur {
-  stroke: none;
+#restodesc__3-2:hover::after {
+  opacity: 1;
 }
 #restodesc__3-2_coeur {
-  fill: url(#restodesc__3-2-linear2);
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  background-color: linear-gradient bottom to top, #FFF, #FFF;
   stroke: #000;
+  transition: all 1000ms;
+}
+#restodesc__3-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 10s;
 }
 
 #restodesc__3-2-linear2 {
