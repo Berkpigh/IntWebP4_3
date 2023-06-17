@@ -2,27 +2,45 @@
     position: relative;
     height: 25px;
     width: 33px;
-    &__clicked{
+
+    &__clicked {
         position: absolute;
         @include poisition-0;
         &-heart {
             opacity: 0;
-            background: linear-gradient(#FFFFFF 0 50%, $col-violet 50% 65% , $col-pink);
+            background-image: linear-gradient(#FFFFFF 0 50%, $col-violet 50% 65% , $col-pink);
             background-size: auto 60px;
             background-position: 0 0px;
-/*
-            background-clip: text;
-            -webkit-background-clip: text;
-*/
             color: transparent;
             animation: drain-out 5 * $duration ease-in  both;
             &:hover {
-                /*background:red;*/
                 animation: fill-up 5 * $duration ease-in  both;
             }
         }
     }
+
 }
 .fa-heart {
     font-size: 1.8rem;
+    cursor: pointer;
 }
+
+/*
+    &__clicked {
+        position: absolute;
+        @include poisition-0;
+        &-heart {
+            opacity: 0;
+            color: linear-gradient(#FFFFFF 0 50%, $col-violet 50% 65% , $col-pink);
+            background-size: auto 60px;
+            background-position: 0 0px;
+            color: transparent;
+            animation: drain-out 5 * $duration ease-in  both;
+            &:hover {
+                animation: fill-up 5 * $duration ease-in  both;
+            }
+        }
+    }
+
+}
+*/

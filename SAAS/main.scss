@@ -287,7 +287,8 @@ body {
     }
 }
 
-/* ---  1   --- */
+/* ---  1  a --- */
+/*
 #restodesc__3 {
     &-1 {
         position: relative;
@@ -310,7 +311,7 @@ body {
                 opacity: 1;
             }
         }*/
-        
+/*        
         &_coeur {
             width: 23px;
             height: 21px;
@@ -331,8 +332,58 @@ body {
 #restodesc__3-1-linear1 {
     --color-stop: #FFF;
     /*--color-med: #FFF;*/
+    /*--color-bot: #FFF;
+}*/
+
+/* Fin 1 a  --- */
+/* ---  1  b --- */
+#restodesc__3 {
+    &-1 {
+        position: relative;
+        width: 23px;
+        height: 21px;
+
+        &:hover {
+            #restodesc__3-1_coeur {
+                stroke: #f7f7f7;
+                opacity: 1;
+            }
+        }
+        
+        &_coeur {
+            width: 23px;
+            height: 21px;
+            z-index: 1;
+            stroke: #000;
+            transition: all 10 * $duration;
+
+            &-path {
+                fill: $col-white;
+            }
+
+            &:hover &-path {
+                 
+                    fill: $col-violet;
+                
+           }
+        }
+/*
+      &::after {
+            @include pseudo-elem-after;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 10s ease 10ms;
+        }
+ */    
+    }
+}
+
+#restodesc__3-1-linear1 {
+    --color-stop: #FF0000;
+    /*--color-med: #FFF;*/
     --color-bot: #FFF;
 }
+/* Fin 1 b   */
 /* ---   2   --- */
 #restodesc__3 {
     &-2 {
