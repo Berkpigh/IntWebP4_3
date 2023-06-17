@@ -4,7 +4,8 @@
     @include poisition-0;
     z-index: 10;
     visibility: hidden;
-    animation: loading 35 * $duration linear backwards; 
+    /*animation: loading 35 * $duration linear backwards;*/
+    animation: loading 3 * $duration linear backwards; 
 }
 
 .loader {
