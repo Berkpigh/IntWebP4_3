@@ -660,19 +660,11 @@ body {
   grid-column: 2/3;
 }
 
-/* ---  1  a --- */
+/* ---  1  --- */
 #restodesc__3-1 {
   position: relative;
   width: 23px;
   height: 21px;
-  /*
-          &::after {
-              @include pseudo-elem-after;
-              opacity: 0;
-              z-index: -1;
-              transition: opacity 10s;
-          }
-  */
 }
 #restodesc__3-1_coeur {
   width: 23px;
@@ -696,135 +688,88 @@ body {
   --color-bot: #FFF;
 }
 
-/* Fin 1 a  --- */
-/* ---  1  b --- */
-/*
-#restodesc__3 {
-    &-1 {
-        position: relative;
-        width: 23px;
-        height: 21px;
-
-        &:hover {
-            #restodesc__3-1_coeur {
-                stroke: #f7f7f7;
-                opacity: 1;
-            }
-        }
-
-        &_coeur {
-            width: 23px;
-            height: 21px;
-            z-index: 1;
-            stroke: #000;
-            transition: all 10 * $duration;
-
-            &-path {
-                fill: $col-white;
-            }
-
-            &:hover &-path {
-
-                    fill: $col-violet;
-
-           }
-        }
-    }
-}
-#restodesc__3-1-linear1 {
-    --color-stop: #FF0000;
-    --color-bot: #FFF;
-}
-*/
-/* Fin 1 b   */
 /* ---   2   --- */
 #restodesc__3-2 {
   position: relative;
   width: 23px;
   height: 21px;
 }
-#restodesc__3-2:hover #restodesc__3-2_coeur {
-  stroke: #f7f7f7;
-  background-color: linear-gradient bottom to top, #9356dc, #FF79DA;
-}
-#restodesc__3-2:hover::after {
-  opacity: 1;
-}
 #restodesc__3-2_coeur {
   width: 23px;
   height: 21px;
   z-index: 1;
-  background-color: linear-gradient bottom to top, #FFF, #FFF;
+  fill: url(#restodesc__3-2-linear2);
   stroke: #000;
   transition: all 1000ms;
 }
-#restodesc__3-2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 10s;
+#restodesc__3-2_coeur:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#restodesc__3-2_coeur:hover #restodesc__3-2-linear2 {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
 }
 
 #restodesc__3-2-linear2 {
-  --color-stop: #ffffff;
-  --color-bot: #ffffff;
+  --color-stop: #FFF;
+  --color-bot: #FFF;
 }
 
 /* ---  3   --- */
 #restodesc__3-3 {
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  grid-column: 2/3;
+  position: relative;
   width: 23px;
   height: 21px;
 }
-#restodesc__3-3:active #restodesc__3-3-linear3 {
+#restodesc__3-3_coeur {
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#restodesc__3-3-linear3);
+  stroke: #000;
+  transition: all 1000ms;
+}
+#restodesc__3-3_coeur:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#restodesc__3-3_coeur:hover #restodesc__3-3-linear3 {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
 }
-#restodesc__3-3:active #restodesc__3-3_coeur {
-  stroke: none;
-}
-#restodesc__3-3_coeur {
-  fill: url(#restodesc__3-3-linear3);
-  stroke: #000;
-}
 
 #restodesc__3-3-linear3 {
-  --color-stop: #ffffff;
-  --color-bot: #ffffff;
+  --color-stop: #FFF;
+  --color-bot: #FFF;
 }
 
 /* ---  4   --- */
 #restodesc__3-4 {
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  grid-column: 2/3;
+  position: relative;
   width: 23px;
   height: 21px;
 }
-#restodesc__3-4:active #restodesc__3-4-linear4 {
+#restodesc__3-4_coeur {
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#restodesc__3-4-linear4);
+  stroke: #000;
+  transition: all 1000ms;
+}
+#restodesc__3-4_coeur:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#restodesc__3-4_coeur:hover #restodesc__3-4-linear4 {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
 }
-#restodesc__3-4:active #restodesc__3-4_coeur {
-  stroke: none;
-}
-#restodesc__3-4_coeur {
-  fill: url(#restodesc__3-4-linear4);
-  stroke: #000;
-}
 
 #restodesc__3-4-linear4 {
-  --color-stop: #ffffff;
-  --color-bot: #ffffff;
+  --color-stop: #FFF;
+  --color-bot: #FFF;
 }
 
 @media only screen and (min-width: 1440px) {
