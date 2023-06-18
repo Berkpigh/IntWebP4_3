@@ -33,6 +33,35 @@ body {
     height: 694px;
     width: 100%;
 }
+
+#landingresto-container-titre__coeur-palette {
+/*
+        position: relative;
+        width: 23px;
+        height: 21px;
+*/
+    width: 23px;
+    height: 21px;
+    z-index: 1;
+    fill: url(#svg-linear-palette);
+    stroke: #000;
+    transition: all 10 * $duration;
+
+    &:hover {
+        stroke: #f7f7f7;
+        animation: violetheart 20 * $duration;
+        #svg-linear-palette {
+            --color-stop: #{$col-violet};
+            --color-bot: #{$col-pink};
+        }
+    }
+}
+#svg-linear-palette {
+    --color-stop: #FFF;
+    --color-bot: #FFF;
+}
+
+
 .landingresto {
     position: relative;
     height: 620px;

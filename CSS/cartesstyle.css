@@ -241,6 +241,33 @@ body {
   width: 100%;
 }
 
+#landingresto-container-titre__coeur-palette {
+  /*
+          position: relative;
+          width: 23px;
+          height: 21px;
+  */
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#svg-linear-palette);
+  stroke: #000;
+  transition: all 1000ms;
+}
+#landingresto-container-titre__coeur-palette:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#landingresto-container-titre__coeur-palette:hover #svg-linear-palette {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
+}
+
+#svg-linear-palette {
+  --color-stop: #FFF;
+  --color-bot: #FFF;
+}
+
 .landingresto {
   position: relative;
   height: 620px;
