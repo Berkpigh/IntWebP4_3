@@ -5,7 +5,7 @@
     z-index: 10;
     visibility: hidden;
     /*animation: loading 35 * $duration linear backwards;*/
-    animation: loading 35 * $duration linear backwards; 
+    animation: loading 50 * $duration linear backwards; 
 }
 
 .loader {
@@ -13,24 +13,37 @@
     height: 100%;
     @include flex-center;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     &-element {
-        @include flex-center;
+        margin-top: 70px;
+        @include flex-around;
         gap:35px;
         &-1 {
             @include flex-center;
                 i {
-                    font-size: 10em;
-                    color: #ffffff;
-                    animation: spin 7 * $duration 6 ease-in-out alternate-reverse;
+                    font-size: 15em;
+                    color: $col-bottle;
+                    animation-name: bottlemouvement;
+                    animation-duration: 45 * $duration;
+                    animation-iteration-count: 3;
+                    animation-direction: alternate;
+                    animation-timing-function: cubic-bezier(.67,.14,.18,.61);
+                    animation-fill-mode: both;
+                    margin-bottom: 350px;
                 }
             }
         &-2 {
             @include flex-center;
-            i {
-                font-size: 10em;
-                color: #ffffff;
-                animation: spin-revert  7 * $duration 6 ease-in-out alternate-reverse;
+            svg {
+                margin-left: 20px;
+                fill: url(#svg-loader-linear);
+                color: $color-pimary;
+                animation-name: glasmouvement;
+                animation-duration: 50 * $duration;
+                animation-iteration-count: 3;
+                animation-direction: normal;
+                animation-timing-function: cubic-bezier(.67,.14,.18,.61);
+                animation-fill-mode: both;
             }
         }
     }
@@ -39,4 +52,8 @@
         font-size: 1.75em;
         font-weight: 400; 
     }
+}
+#svg-loader-linear {
+    --color-stop: #{$col-violet};
+    --color-bot: #{$col-pink};    
 }

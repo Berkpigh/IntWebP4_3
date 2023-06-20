@@ -1,3 +1,9 @@
+:root {
+    --hhh: 314deg;
+    --sss: 67%;
+    --lll: 37%;
+}
+
 $col-violet: #9356dc;
 $col-darkblue: #003a68;
 $col-lightblue: #89C8FA;
@@ -8,6 +14,7 @@ $col-white: #ffffff;
 $col-pink: #FF79DA;
 $col-grey: #D2D2D2;
 $col-darkgrey: #353535;
+$col-bottle: hsl(var(--hhh),var(--sss),var(--lll));
 $primary-background: #F6F6F6;
 $choixartlin2: 230px;
 $choixartlin2desktop: 550px;

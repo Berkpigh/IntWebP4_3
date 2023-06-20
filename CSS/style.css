@@ -5,6 +5,12 @@
   font-family: myFirstFont;
   src: url(/Shrikhand-Regular.ttf);
 }
+:root {
+  --hhh: 314deg;
+  --sss: 67%;
+  --lll: 37%;
+}
+
 @keyframes fill-up {
   0% {
     background-position: 0 -10px;
@@ -84,6 +90,34 @@
     opacity: 1;
   }
 }
+@keyframes bottlemouvement {
+  0% {
+    transform: rotate(-45deg);
+  }
+  /*
+      20% {transform: rotate(-20deg);}
+      40% {transform: rotate(5deg);}
+      60% {transform: rotate(25deg);}
+      80% {transform: rotate(50deg);}
+  */
+  100% {
+    transform: rotate(70deg);
+  }
+}
+@keyframes glasmouvement {
+  0% {
+    transform: translateX(-15px);
+  }
+  /*
+      20% {transform: translateX(-30px);}
+      40% {transform: translateX(-45px);}
+      60% {transform: translateX(-60px);}
+      80% {transform: translateX(-75px);}
+  */
+  100% {
+    transform: translateX(-100px);
+  }
+}
 .container {
   background-color: #fff;
   position: fixed;
@@ -94,7 +128,7 @@
   z-index: 10;
   visibility: hidden;
   /*animation: loading 35 * $duration linear backwards;*/
-  animation: loading 3500ms linear backwards;
+  animation: loading 5000ms linear backwards;
 }
 
 .loader {
@@ -104,12 +138,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 100px;
+  gap: 50px;
 }
 .loader-element {
+  margin-top: 70px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 35px;
 }
 .loader-element-1 {
@@ -118,24 +153,41 @@
   justify-content: center;
 }
 .loader-element-1 i {
-  font-size: 10em;
-  color: #ffffff;
-  animation: spin 700ms 6 ease-in-out alternate-reverse;
+  font-size: 15em;
+  color: hsl(var(--hhh), var(--sss), var(--lll));
+  animation-name: bottlemouvement;
+  animation-duration: 4500ms;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
+  margin-bottom: 350px;
 }
 .loader-element-2 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.loader-element-2 i {
-  font-size: 10em;
-  color: #ffffff;
-  animation: spin-revert 700ms 6 ease-in-out alternate-reverse;
+.loader-element-2 svg {
+  margin-left: 20px;
+  fill: url(#svg-loader-linear);
+  color: #9356DC;
+  animation-name: glasmouvement;
+  animation-duration: 5000ms;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
 }
 .loader-text {
   font-family: "Shrikhand";
   font-size: 1.75em;
   font-weight: 400;
+}
+
+#svg-loader-linear {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
 }
 
 /* ---  1  --- */
