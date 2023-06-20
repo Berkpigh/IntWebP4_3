@@ -1,3 +1,6 @@
+/*=== - === - === - === - === - === - === - === - === - === - == */
+/* --- H o m e
+/*=== - === - === - === - === - === - === - === - === - === - == */
 @font-face {
   font-family: myFirstFont;
   src: url(/Shrikhand-Regular.ttf);
@@ -135,54 +138,206 @@
   font-weight: 400;
 }
 
-.favorite {
+/* ---  1  --- */
+#restodesc__3-1 {
   position: relative;
-  height: 25px;
-  width: 33px;
+  width: 23px;
+  height: 21px;
 }
-.favorite__clicked {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+#restodesc__3-1_coeur {
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#restodesc__3-1-linear1);
+  stroke: #000;
+  transition: all 1000ms;
 }
-.favorite__clicked-heart {
-  opacity: 0;
-  background-image: linear-gradient(#FFFFFF 0 50%, #9356dc 50% 65%, #FF79DA);
-  background-size: auto 60px;
-  background-position: 0 0px;
-  color: transparent;
-  animation: drain-out 500ms ease-in both;
+#restodesc__3-1_coeur:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
 }
-.favorite__clicked-heart:hover {
-  animation: fill-up 500ms ease-in both;
+#restodesc__3-1_coeur:hover #restodesc__3-1-linear1 {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
 }
 
-.fa-heart {
-  font-size: 1.8rem;
-  cursor: pointer;
+#restodesc__3-1-linear1 {
+  --color-stop: #FFF;
+  --color-bot: #FFF;
 }
 
-/*
-    &__clicked {
-        position: absolute;
-        @include poisition-0;
-        &-heart {
-            opacity: 0;
-            color: linear-gradient(#FFFFFF 0 50%, $col-violet 50% 65% , $col-pink);
-            background-size: auto 60px;
-            background-position: 0 0px;
-            color: transparent;
-            animation: drain-out 5 * $duration ease-in  both;
-            &:hover {
-                animation: fill-up 5 * $duration ease-in  both;
-            }
-        }
-    }
-
+/* ---   2   --- */
+#restodesc__3-2 {
+  position: relative;
+  width: 23px;
+  height: 21px;
 }
-*/
+#restodesc__3-2_coeur {
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#restodesc__3-2-linear2);
+  stroke: #000;
+  transition: all 1000ms;
+}
+#restodesc__3-2_coeur:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#restodesc__3-2_coeur:hover #restodesc__3-2-linear2 {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
+}
+
+#restodesc__3-2-linear2 {
+  --color-stop: #FFF;
+  --color-bot: #FFF;
+}
+
+/* ---  3   --- */
+#restodesc__3-3 {
+  position: relative;
+  width: 23px;
+  height: 21px;
+}
+#restodesc__3-3_coeur {
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#restodesc__3-3-linear3);
+  stroke: #000;
+  transition: all 1000ms;
+}
+#restodesc__3-3_coeur:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#restodesc__3-3_coeur:hover #restodesc__3-3-linear3 {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
+}
+
+#restodesc__3-3-linear3 {
+  --color-stop: #FFF;
+  --color-bot: #FFF;
+}
+
+/* ---  4   --- */
+#restodesc__3-4 {
+  position: relative;
+  width: 23px;
+  height: 21px;
+}
+#restodesc__3-4_coeur {
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#restodesc__3-4-linear4);
+  stroke: #000;
+  transition: all 1000ms;
+}
+#restodesc__3-4_coeur:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#restodesc__3-4_coeur:hover #restodesc__3-4-linear4 {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
+}
+
+#restodesc__3-4-linear4 {
+  --color-stop: #FFF;
+  --color-bot: #FFF;
+}
+
+#landingresto-container-titre__coeur-palette {
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#svg-linear-palette);
+  stroke: #000;
+  transition: all 1000ms;
+}
+#landingresto-container-titre__coeur-palette:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#landingresto-container-titre__coeur-palette:hover #svg-linear-palette {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
+}
+
+#svg-linear-palette {
+  --color-stop: #FFF;
+  --color-bot: #FFF;
+}
+
+#landingresto-container-titre__coeur-delices {
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#svg-linear-delices);
+  stroke: #000;
+  transition: all 1000ms;
+}
+#landingresto-container-titre__coeur-delices:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#landingresto-container-titre__coeur-delices:hover #svg-linear-delices {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
+}
+
+#svg-linear-delices {
+  --color-stop: #FFF;
+  --color-bot: #FFF;
+}
+
+#landingresto-container-titre__coeur-note {
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#svg-linear-note);
+  stroke: #000;
+  transition: all 1000ms;
+}
+#landingresto-container-titre__coeur-note:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#landingresto-container-titre__coeur-note:hover #svg-linear-note {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
+}
+
+#svg-linear-note {
+  --color-stop: #FFF;
+  --color-bot: #FFF;
+}
+
+#landingresto-container-titre__coeur-francaise {
+  width: 23px;
+  height: 21px;
+  z-index: 1;
+  fill: url(#svg-linear-francaise);
+  stroke: #000;
+  transition: all 1000ms;
+}
+#landingresto-container-titre__coeur-francaise:hover {
+  stroke: #f7f7f7;
+  animation: violetheart 2000ms;
+}
+#landingresto-container-titre__coeur-francaise:hover #svg-linear-francaise {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
+}
+
+#svg-linear-francaise {
+  --color-stop: #FFF;
+  --color-bot: #FFF;
+}
+
 .landing-entete {
   display: flex;
   justify-content: center;
@@ -413,6 +568,14 @@ body {
 
 #header {
   height: 63px;
+}
+
+#inputresto {
+  width: 109px;
+  border: none;
+  background: #EAEAEA;
+  font-weight: 500;
+  /*border-width: 0;*/
 }
 
 .landing-restaurant {
@@ -658,118 +821,6 @@ body {
   top: 18px;
   left: 18px;
   grid-column: 2/3;
-}
-
-/* ---  1  --- */
-#restodesc__3-1 {
-  position: relative;
-  width: 23px;
-  height: 21px;
-}
-#restodesc__3-1_coeur {
-  width: 23px;
-  height: 21px;
-  z-index: 1;
-  fill: url(#restodesc__3-1-linear1);
-  stroke: #000;
-  transition: all 1000ms;
-}
-#restodesc__3-1_coeur:hover {
-  stroke: #f7f7f7;
-  animation: violetheart 2000ms;
-}
-#restodesc__3-1_coeur:hover #restodesc__3-1-linear1 {
-  --color-stop: #9356dc;
-  --color-bot: #FF79DA;
-}
-
-#restodesc__3-1-linear1 {
-  --color-stop: #FFF;
-  --color-bot: #FFF;
-}
-
-/* ---   2   --- */
-#restodesc__3-2 {
-  position: relative;
-  width: 23px;
-  height: 21px;
-}
-#restodesc__3-2_coeur {
-  width: 23px;
-  height: 21px;
-  z-index: 1;
-  fill: url(#restodesc__3-2-linear2);
-  stroke: #000;
-  transition: all 1000ms;
-}
-#restodesc__3-2_coeur:hover {
-  stroke: #f7f7f7;
-  animation: violetheart 2000ms;
-}
-#restodesc__3-2_coeur:hover #restodesc__3-2-linear2 {
-  --color-stop: #9356dc;
-  --color-bot: #FF79DA;
-}
-
-#restodesc__3-2-linear2 {
-  --color-stop: #FFF;
-  --color-bot: #FFF;
-}
-
-/* ---  3   --- */
-#restodesc__3-3 {
-  position: relative;
-  width: 23px;
-  height: 21px;
-}
-#restodesc__3-3_coeur {
-  width: 23px;
-  height: 21px;
-  z-index: 1;
-  fill: url(#restodesc__3-3-linear3);
-  stroke: #000;
-  transition: all 1000ms;
-}
-#restodesc__3-3_coeur:hover {
-  stroke: #f7f7f7;
-  animation: violetheart 2000ms;
-}
-#restodesc__3-3_coeur:hover #restodesc__3-3-linear3 {
-  --color-stop: #9356dc;
-  --color-bot: #FF79DA;
-}
-
-#restodesc__3-3-linear3 {
-  --color-stop: #FFF;
-  --color-bot: #FFF;
-}
-
-/* ---  4   --- */
-#restodesc__3-4 {
-  position: relative;
-  width: 23px;
-  height: 21px;
-}
-#restodesc__3-4_coeur {
-  width: 23px;
-  height: 21px;
-  z-index: 1;
-  fill: url(#restodesc__3-4-linear4);
-  stroke: #000;
-  transition: all 1000ms;
-}
-#restodesc__3-4_coeur:hover {
-  stroke: #f7f7f7;
-  animation: violetheart 2000ms;
-}
-#restodesc__3-4_coeur:hover #restodesc__3-4-linear4 {
-  --color-stop: #9356dc;
-  --color-bot: #FF79DA;
-}
-
-#restodesc__3-4-linear4 {
-  --color-stop: #FFF;
-  --color-bot: #FFF;
 }
 
 @media only screen and (min-width: 1440px) {
