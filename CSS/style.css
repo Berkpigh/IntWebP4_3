@@ -94,7 +94,7 @@
   z-index: 10;
   visibility: hidden;
   /*animation: loading 35 * $duration linear backwards;*/
-  animation: loading 300ms linear backwards;
+  animation: loading 3500ms linear backwards;
 }
 
 .loader {

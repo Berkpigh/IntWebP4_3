@@ -5,7 +5,7 @@
     z-index: 10;
     visibility: hidden;
     /*animation: loading 35 * $duration linear backwards;*/
-    animation: loading 3 * $duration linear backwards; 
+    animation: loading 35 * $duration linear backwards; 
 }
 
 .loader {
@@ -25,14 +25,14 @@
                     animation: spin 7 * $duration 6 ease-in-out alternate-reverse;
                 }
             }
-            &-2 {
-                @include flex-center;
-                i {
-                    font-size: 10em;
-                    color: #ffffff;
-                    animation: spin-revert  7 * $duration 6 ease-in-out alternate-reverse;
-                }
+        &-2 {
+            @include flex-center;
+            i {
+                font-size: 10em;
+                color: #ffffff;
+                animation: spin-revert  7 * $duration 6 ease-in-out alternate-reverse;
             }
+        }
     }
     &-text {
         font-family: 'Shrikhand';
