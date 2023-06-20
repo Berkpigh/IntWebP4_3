@@ -1,46 +1,204 @@
-.favorite {
-    position: relative;
-    height: 25px;
-    width: 33px;
+/* ---  1  --- */
+#restodesc__3 {
+    &-1 {
+        position: relative;
+        width: 23px;
+        height: 21px;
 
-    &__clicked {
-        position: absolute;
-        @include poisition-0;
-        &-heart {
-            opacity: 0;
-            background-image: linear-gradient(#FFFFFF 0 50%, $col-violet 50% 65% , $col-pink);
-            background-size: auto 60px;
-            background-position: 0 0px;
-            color: transparent;
-            animation: drain-out 5 * $duration ease-in  both;
+        &_coeur {
+            width: 23px;
+            height: 21px;
+            z-index: 1;
+            fill: url(#restodesc__3-1-linear1);
+            stroke: #000;
+            transition: all 10 * $duration;
+
             &:hover {
-                animation: fill-up 5 * $duration ease-in  both;
+                stroke: #f7f7f7;
+                animation: violetheart 20 * $duration;
+                #restodesc__3-1-linear1 {
+                    --color-stop: #{$col-violet};
+                    --color-bot: #{$col-pink};
+                }
             }
         }
     }
-
 }
-.fa-heart {
-    font-size: 1.8rem;
-    cursor: pointer;
+#restodesc__3-1-linear1 {
+    --color-stop: #FFF;
+    --color-bot: #FFF;
 }
+/* ---   2   --- */
+#restodesc__3 {
+    &-2 {
+        position: relative;
+        width: 23px;
+        height: 21px;
 
-/*
-    &__clicked {
-        position: absolute;
-        @include poisition-0;
-        &-heart {
-            opacity: 0;
-            color: linear-gradient(#FFFFFF 0 50%, $col-violet 50% 65% , $col-pink);
-            background-size: auto 60px;
-            background-position: 0 0px;
-            color: transparent;
-            animation: drain-out 5 * $duration ease-in  both;
+        &_coeur {
+            width: 23px;
+            height: 21px;
+            z-index: 1;
+            fill: url(#restodesc__3-2-linear2);
+            stroke: #000;
+            transition: all 10 * $duration;
+
             &:hover {
-                animation: fill-up 5 * $duration ease-in  both;
+                stroke: #f7f7f7;
+                animation: violetheart 20 * $duration;
+                #restodesc__3-2-linear2 {
+                    --color-stop: #{$col-violet};
+                    --color-bot: #{$col-pink};
+                }
             }
         }
     }
-
 }
-*/
+#restodesc__3-2-linear2 {
+    --color-stop: #FFF;
+    --color-bot: #FFF;
+}
+/* ---  3   --- */
+#restodesc__3 {
+    &-3 {
+        position: relative;
+        width: 23px;
+        height: 21px;
+
+        &_coeur {
+            width: 23px;
+            height: 21px;
+            z-index: 1;
+            fill: url(#restodesc__3-3-linear3);
+            stroke: #000;
+            transition: all 10 * $duration;
+
+            &:hover {
+                stroke: #f7f7f7;
+                animation: violetheart 20 * $duration;
+                #restodesc__3-3-linear3 {
+                    --color-stop: #{$col-violet};
+                    --color-bot: #{$col-pink};
+                }
+            }
+        }
+    }
+}
+#restodesc__3-3-linear3 {
+    --color-stop: #FFF;
+    --color-bot: #FFF;
+}
+/* ---  4   --- */
+#restodesc__3 {
+    &-4 {
+        position: relative;
+        width: 23px;
+        height: 21px;
+
+        &_coeur {
+            width: 23px;
+            height: 21px;
+            z-index: 1;
+            fill: url(#restodesc__3-4-linear4);
+            stroke: #000;
+            transition: all 10 * $duration;
+
+            &:hover {
+                stroke: #f7f7f7;
+                animation: violetheart 20 * $duration;
+                #restodesc__3-4-linear4 {
+                    --color-stop: #{$col-violet};
+                    --color-bot: #{$col-pink};
+                }
+            }
+        }
+    }
+}
+#restodesc__3-4-linear4 {
+    --color-stop: #FFF;
+    --color-bot: #FFF;
+}
+
+#landingresto-container-titre__coeur-palette {
+    width: 23px;
+    height: 21px;
+    z-index: 1;
+    fill: url(#svg-linear-palette);
+    stroke: #000;
+    transition: all 10 * $duration;
+
+    &:hover {
+        stroke: #f7f7f7;
+        animation: violetheart 20 * $duration;
+        #svg-linear-palette {
+            --color-stop: #{$col-violet};
+            --color-bot: #{$col-pink};
+        }
+    }
+}
+#svg-linear-palette {
+    --color-stop: #FFF;
+    --color-bot: #FFF;
+}
+#landingresto-container-titre__coeur-delices {
+    width: 23px;
+    height: 21px;
+    z-index: 1;
+    fill: url(#svg-linear-delices);
+    stroke: #000;
+    transition: all 10 * $duration;
+
+    &:hover {
+        stroke: #f7f7f7;
+        animation: violetheart 20 * $duration;
+        #svg-linear-delices {
+            --color-stop: #{$col-violet};
+            --color-bot: #{$col-pink};
+        }
+    }
+}
+#svg-linear-delices {
+    --color-stop: #FFF;
+    --color-bot: #FFF;
+}
+#landingresto-container-titre__coeur-note {
+    width: 23px;
+    height: 21px;
+    z-index: 1;
+    fill: url(#svg-linear-note);
+    stroke: #000;
+    transition: all 10 * $duration;
+
+    &:hover {
+        stroke: #f7f7f7;
+        animation: violetheart 20 * $duration;
+        #svg-linear-note {
+            --color-stop: #{$col-violet};
+            --color-bot: #{$col-pink};
+        }
+    }
+}
+#svg-linear-note {
+    --color-stop: #FFF;
+    --color-bot: #FFF;
+}#landingresto-container-titre__coeur-francaise {
+    width: 23px;
+    height: 21px;
+    z-index: 1;
+    fill: url(#svg-linear-francaise);
+    stroke: #000;
+    transition: all 10 * $duration;
+
+    &:hover {
+        stroke: #f7f7f7;
+        animation: violetheart 20 * $duration;
+        #svg-linear-francaise {
+            --color-stop: #{$col-violet};
+            --color-bot: #{$col-pink};
+        }
+    }
+}
+#svg-linear-francaise {
+    --color-stop: #FFF;
+    --color-bot: #FFF;
+}   

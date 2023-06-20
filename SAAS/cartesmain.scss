@@ -1,5 +1,5 @@
 /*=== - === - === - === - === - === - === - === - === - === - == */
-/* --- L a   P a l e t t e   d u   g o û t
+/* --- C a r t e s
 /*=== - === - === - === - === - === - === - === - === - === - == */
 @font-face {
     font-family: myFirstFont;
@@ -9,9 +9,12 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/keyframes";
 @import "./base/base";
 @import "./base/typography";
 @import "./components/buttons";
+@import "./components/loading";
+@import "./components/favorite";
 @import "./layouts/header";
 @import "./layouts/nav";
 @import "./layouts/container";
@@ -33,34 +36,6 @@ body {
     height: 694px;
     width: 100%;
 }
-
-#landingresto-container-titre__coeur-palette {
-/*
-        position: relative;
-        width: 23px;
-        height: 21px;
-*/
-    width: 23px;
-    height: 21px;
-    z-index: 1;
-    fill: url(#svg-linear-palette);
-    stroke: #000;
-    transition: all 10 * $duration;
-
-    &:hover {
-        stroke: #f7f7f7;
-        animation: violetheart 20 * $duration;
-        #svg-linear-palette {
-            --color-stop: #{$col-violet};
-            --color-bot: #{$col-pink};
-        }
-    }
-}
-#svg-linear-palette {
-    --color-stop: #FFF;
-    --color-bot: #FFF;
-}
-
 
 .landingresto {
     position: relative;
