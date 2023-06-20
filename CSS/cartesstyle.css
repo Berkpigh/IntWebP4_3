@@ -601,7 +601,6 @@ body {
   font-weight: 400;
   font-style: italic;
   font-size: 1.75rem;
-  margin-right: 30px;
   white-space: nowrap;
 }
 .landingresto-container-titre__coeur {
@@ -864,6 +863,7 @@ body {
     font-style: italic;
     font-size: 1.75rem;
     width: 24.7393%;
+    margin-right: 30px;
   }
   .landingresto-container-titre__coeur {
     width: 2.085%;
