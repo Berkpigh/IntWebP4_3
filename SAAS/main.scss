@@ -141,8 +141,8 @@ body {
 
     &__no {
         position: absolute;
-        left: 8px;
-        top: 6px;
+        left: 7px;
+        top: 7px;
         width: 8px;
         height: 11px;
     }
@@ -364,7 +364,6 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-        
             
             span:nth-child(1) {
                 position: absolute;
@@ -378,9 +377,10 @@ body {
             &__no {
                 position: absolute;
                 left: 14px;
-                top: 7px;
+                top: -6px;
                 width: 5px;
                 height: 24px;
+                color: #fff;
             }
             &__symbol {
                 position: absolute;

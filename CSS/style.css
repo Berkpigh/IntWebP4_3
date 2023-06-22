@@ -123,6 +123,16 @@
     transform: translateX(-100px);
   }
 }
+@keyframes loadercartescontainer {
+  0% {
+    top: 410px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
 .container {
   background-color: #fff;
   position: fixed;
@@ -195,6 +205,20 @@
 #svg-loader-linear {
   --color-stop: #9356dc;
   --color-bot: #FF79DA;
+}
+
+.loaderentrees {
+  position: absolute;
+  top: 0;
+  height: 270px;
+  width: 100%;
+  z-index: -1;
+  animation-name: loadercartes;
+  animation-duration: 5000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
 }
 
 /* ---  1  --- */
@@ -735,8 +759,8 @@ body {
 }
 .fonctionart__no {
   position: absolute;
-  left: 8px;
-  top: 6px;
+  left: 7px;
+  top: 7px;
   width: 8px;
   height: 11px;
 }
@@ -956,9 +980,10 @@ body {
   .landing-fonctionnement .fonctionart__no {
     position: absolute;
     left: 14px;
-    top: 7px;
+    top: -6px;
     width: 5px;
     height: 24px;
+    color: #fff;
   }
   .landing-fonctionnement .fonctionart__symbol {
     position: absolute;
