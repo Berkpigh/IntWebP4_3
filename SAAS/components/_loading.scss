@@ -34,14 +34,40 @@
             }
         &-2 {
             @include flex-center;
-            svg {
-                margin-left: 20px;
+
+            &__container {
+                position: relative;
+                height: 500px;
+            }
+
+            &__svg1 {
+                position: absolute;
+                top: 200px;
+                left: -20px;
+                z-index: 1;
                 margin-bottom: -50px;
-                fill: url(#svg-loader-linear);
+                fill: url(#svg-loader-linear1);
                 color: $color-pimary;
-                animation-name: glasmouvement;
+                animation-name: glasmouvement1;
                 animation-duration: 50 * $duration;
-                animation-iteration-count: 3;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-timing-function: cubic-bezier(.67,.14,.18,.61);
+                animation-fill-mode: both;
+            }
+
+            &__svg2 {
+                position: absolute;
+                top: 200px;
+                left: -85px;
+                z-index: -1;
+                opacity: 1;
+                margin-bottom: -50px;
+                fill: url(#svg-loader-linear2);
+                color: $color-pimary;
+                animation-name: glasmouvement2;
+                animation-duration: 50 * $duration;
+                animation-iteration-count: 1;
                 animation-direction: normal;
                 animation-timing-function: cubic-bezier(.67,.14,.18,.61);
                 animation-fill-mode: both;
@@ -55,9 +81,13 @@
         margin-top: 50px; 
     }
 }
-#svg-loader-linear {
-    --color-stop: #{$col-violet};
-    --color-bot: #{$col-pink};    
+#svg-loader-linear1 {
+    --color-bot: #{$col-violet};    
+    --color-top: #{$col-pink};
+}
+#svg-loader-linear2 {
+    --color-bot: #{$col-violet};    
+    --color-top: #{$col-pink};
 }
 .loaderentrees {
     position: absolute;
