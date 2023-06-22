@@ -85,16 +85,17 @@
     }
 }
 @keyframes bottlemouvement {
-    0% {transform: rotate(-45deg);}
+    0% {transform: rotate(-45deg);
+        margin-bottom: 0;}
+    20% {margin-bottom: 320px;}
 /*
     20% {transform: rotate(-20deg);}
     40% {transform: rotate(5deg);}
     60% {transform: rotate(25deg);}
     80% {transform: rotate(50deg);}
 */
-    100% {
-        transform: rotate(70deg);
-    }
+    100% {transform: rotate(70deg);
+        margin-bottom: 320px;}
 }
 @keyframes glasmouvement {
     0% {transform: translateX(-15px);}

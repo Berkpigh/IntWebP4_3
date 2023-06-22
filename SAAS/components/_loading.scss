@@ -29,13 +29,14 @@
                     animation-direction: alternate;
                     animation-timing-function: cubic-bezier(.67,.14,.18,.61);
                     animation-fill-mode: both;
-                    margin-bottom: 350px;
+                    margin-bottom: 320px;
                 }
             }
         &-2 {
             @include flex-center;
             svg {
                 margin-left: 20px;
+                margin-bottom: -50px;
                 fill: url(#svg-loader-linear);
                 color: $color-pimary;
                 animation-name: glasmouvement;
@@ -50,7 +51,8 @@
     &-text {
         font-family: 'Shrikhand';
         font-size: 1.75em;
-        font-weight: 400; 
+        font-weight: 400;
+        margin-top: 50px; 
     }
 }
 #svg-loader-linear {

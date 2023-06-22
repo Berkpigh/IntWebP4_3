@@ -93,6 +93,10 @@
 @keyframes bottlemouvement {
   0% {
     transform: rotate(-45deg);
+    margin-bottom: 0;
+  }
+  20% {
+    margin-bottom: 320px;
   }
   /*
       20% {transform: rotate(-20deg);}
@@ -102,6 +106,7 @@
   */
   100% {
     transform: rotate(70deg);
+    margin-bottom: 320px;
   }
 }
 @keyframes glasmouvement {
@@ -161,7 +166,7 @@
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
   animation-fill-mode: both;
-  margin-bottom: 350px;
+  margin-bottom: 320px;
 }
 .loader-element-2 {
   display: flex;
@@ -170,6 +175,7 @@
 }
 .loader-element-2 svg {
   margin-left: 20px;
+  margin-bottom: -50px;
   fill: url(#svg-loader-linear);
   color: #9356DC;
   animation-name: glasmouvement;
@@ -183,6 +189,7 @@
   font-family: "Shrikhand";
   font-size: 1.75em;
   font-weight: 400;
+  margin-top: 50px;
 }
 
 #svg-loader-linear {
