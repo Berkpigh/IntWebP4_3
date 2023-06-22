@@ -89,16 +89,3 @@
     --color-bot: #{$col-violet};    
     --color-top: #{$col-pink};
 }
-.loaderentrees {
-    position: absolute;
-    top: 0;
-    height: 270px;
-    width: 100%;
-    z-index: -1;
-    animation-name: loadercartes;
-    animation-duration: 50 * $duration;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-timing-function: cubic-bezier(.67,.14,.18,.61);
-    animation-fill-mode: both;
-}

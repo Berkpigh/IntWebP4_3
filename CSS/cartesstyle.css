@@ -99,34 +99,47 @@
   20% {
     margin-bottom: 320px;
   }
-  /*
-      20% {transform: rotate(-20deg);}
-      40% {transform: rotate(5deg);}
-      60% {transform: rotate(25deg);}
-      80% {transform: rotate(50deg);}
-  */
   100% {
     transform: rotate(70deg);
     margin-bottom: 320px;
   }
 }
-@keyframes glasmouvement {
+@keyframes glasmouvement1 {
   0% {
-    transform: translateX(-15px);
+    transform: translateX(0);
   }
-  /*
-      20% {transform: translateX(-30px);}
-      40% {transform: translateX(-45px);}
-      60% {transform: translateX(-60px);}
-      80% {transform: translateX(-75px);}
-  */
+  20% {
+    transform: translateX(-65px);
+  }
   100% {
-    transform: translateX(-100px);
+    transform: translateX(-65px);
+    opacity: 0;
+  }
+}
+@keyframes glasmouvement2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes loadercartescontainer {
   0% {
     top: 410px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes loadercartescontainer-ne {
+  0% {
+    top: 430px;
     opacity: 0;
   }
   100% {
@@ -184,14 +197,37 @@
   align-items: center;
   justify-content: center;
 }
-.loader-element-2 svg {
-  margin-left: 20px;
+.loader-element-2__container {
+  position: relative;
+  height: 500px;
+}
+.loader-element-2__svg1 {
+  position: absolute;
+  top: 200px;
+  left: -20px;
+  z-index: 1;
   margin-bottom: -50px;
-  fill: url(#svg-loader-linear);
+  fill: url(#svg-loader-linear1);
   color: #9356DC;
-  animation-name: glasmouvement;
+  animation-name: glasmouvement1;
   animation-duration: 5000ms;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
+}
+.loader-element-2__svg2 {
+  position: absolute;
+  top: 200px;
+  left: -85px;
+  z-index: -1;
+  opacity: 1;
+  margin-bottom: -50px;
+  fill: url(#svg-loader-linear2);
+  color: #9356DC;
+  animation-name: glasmouvement2;
+  animation-duration: 5000ms;
+  animation-iteration-count: 1;
   animation-direction: normal;
   animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
   animation-fill-mode: both;
@@ -203,23 +239,14 @@
   margin-top: 50px;
 }
 
-#svg-loader-linear {
-  --color-stop: #9356dc;
-  --color-bot: #FF79DA;
+#svg-loader-linear1 {
+  --color-bot: #9356dc;
+  --color-top: #FF79DA;
 }
 
-.loaderentrees {
-  position: absolute;
-  top: 0;
-  height: 270px;
-  width: 100%;
-  z-index: -1;
-  animation-name: loadercartes;
-  animation-duration: 5000ms;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
-  animation-fill-mode: both;
+#svg-loader-linear2 {
+  --color-bot: #9356dc;
+  --color-top: #FF79DA;
 }
 
 /* ---  1  --- */
@@ -766,10 +793,18 @@ body {
   margin-block: 2rem;
 }
 .landingrestone-container__entrees {
+  position: absolute;
+  top: 317px;
   margin: 0 13px 12px 13px;
   width: 93.06%;
   display: flex;
   flex-wrap: wrap;
+  animation-name: loadercartescontainer-ne;
+  animation-duration: 5000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
 }
 .landingrestone-container__entrees h1 {
   font-family: "Roboto";
