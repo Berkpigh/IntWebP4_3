@@ -108,7 +108,9 @@
     100% {transform: translateX(-100px);}
 }
 
-@keyframes loadercontainerentrees {
-    0% {top: 410px;}
-    100% {top: 0;}
+@keyframes loadercartescontainer {
+    0% {top: 410px;
+        opacity: 0;}
+    100% {top: 0;
+        opacity: 1;}
 }

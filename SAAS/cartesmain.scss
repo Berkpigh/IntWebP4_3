@@ -80,7 +80,7 @@ body {
             top: 317px;
             margin: 0 13px 12px 13px;
             width: 93.06%;
-            animation-name: loadercontainerentrees;
+            animation-name: loadercartescontainer;
             animation-duration: 30 * $duration;
             animation-iteration-count: 1;
             animation-direction: normal;
@@ -102,6 +102,11 @@ body {
 .loadercontainer {
     position: relative;
     height: 410px;
+    width: 100%;
+}
+.loadercontainer-ne {
+    position: relative;
+    height: 490px;
     width: 100%;
 }
 /* --- Spécial note enchantée --- */
@@ -268,6 +273,12 @@ body {
 .plats-container {
     margin: 0 13px 12px 13px;
     width: 93.06%;
+    animation-name: loadercartescontainer;
+    animation-duration: 60 * $duration;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(.67,.14,.18,.61);
+    animation-fill-mode: both;
     display: flex;
     flex-wrap: wrap;
     
@@ -287,6 +298,12 @@ body {
 .desserts-container {
     margin: 0 13px 12px 13px;
     width: 93.06%;
+    animation-name: loadercartescontainer;
+    animation-duration: 90 * $duration;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(.67,.14,.18,.61);
+    animation-fill-mode: both;
     display: flex;
     flex-wrap: wrap;
     

@@ -124,12 +124,14 @@
     transform: translateX(-100px);
   }
 }
-@keyframes loadercontainerentrees {
+@keyframes loadercartescontainer {
   0% {
     top: 410px;
+    opacity: 0;
   }
   100% {
     top: 0;
+    opacity: 1;
   }
 }
 .container {
@@ -208,10 +210,10 @@
 
 .loaderentrees {
   position: absolute;
-  top: 317px;
+  top: 0;
   height: 270px;
   width: 100%;
-  z-index: 10;
+  z-index: -1;
   animation-name: loadercartes;
   animation-duration: 5000ms;
   animation-iteration-count: 1;
@@ -695,7 +697,7 @@ body {
   top: 317px;
   margin: 0 13px 12px 13px;
   width: 93.06%;
-  animation-name: loadercontainerentrees;
+  animation-name: loadercartescontainer;
   animation-duration: 3000ms;
   animation-iteration-count: 1;
   animation-direction: normal;
@@ -715,6 +717,12 @@ body {
 .loadercontainer {
   position: relative;
   height: 410px;
+  width: 100%;
+}
+
+.loadercontainer-ne {
+  position: relative;
+  height: 490px;
   width: 100%;
 }
 
@@ -867,6 +875,12 @@ body {
 .plats-container {
   margin: 0 13px 12px 13px;
   width: 93.06%;
+  animation-name: loadercartescontainer;
+  animation-duration: 6000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
   display: flex;
   flex-wrap: wrap;
 }
@@ -887,6 +901,12 @@ body {
 .desserts-container {
   margin: 0 13px 12px 13px;
   width: 93.06%;
+  animation-name: loadercartescontainer;
+  animation-duration: 9000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
   display: flex;
   flex-wrap: wrap;
 }

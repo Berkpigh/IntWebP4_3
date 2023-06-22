@@ -61,10 +61,10 @@
 }
 .loaderentrees {
     position: absolute;
-    top: 317px;
+    top: 0;
     height: 270px;
     width: 100%;
-    z-index: 10;
+    z-index: -1;
     animation-name: loadercartes;
     animation-duration: 50 * $duration;
     animation-iteration-count: 1;
