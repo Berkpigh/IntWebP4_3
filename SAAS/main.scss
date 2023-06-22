@@ -132,8 +132,8 @@ body {
     }
     span:nth-child(1) {
         position: absolute;
-        left: -18px;
-        top: 19px;
+        left: -14px;
+        top: 22px;
         height: 24px;
         width: 24px;
         /*line-height: 20px;*/
@@ -141,10 +141,10 @@ body {
 
     &__no {
         position: absolute;
-        left: 7px;
-        top: 7px;
-        width: 8px;
-        height: 11px;
+        left: 8px;
+        top: -6px;
+        color: #FFF;
+        font-size: 0.75rem;
     }
     &__symbol {
         width: 16px;
@@ -364,24 +364,14 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
-            span:nth-child(1) {
-                position: absolute;
-                left: -18px;
-                top: 19px;
-                height: 35px;
-                width: 35px;
-                line-height: 20px;
-            }
         
             &__no {
                 position: absolute;
-                left: 14px;
                 top: -6px;
-                width: 5px;
-                height: 24px;
+                left: 8pxpx;
                 color: #fff;
             }
+            
             &__symbol {
                 position: absolute;
                 left: 10.48%;
