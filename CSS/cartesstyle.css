@@ -6,6 +6,12 @@
   font-family: myFirstFont;
   src: url(/Shrikhand-Regular.ttf);
 }
+:root {
+  --hhh: 314deg;
+  --sss: 67%;
+  --lll: 37%;
+}
+
 @keyframes fill-up {
   0% {
     background-position: 0 -10px;
@@ -85,6 +91,47 @@
     opacity: 1;
   }
 }
+@keyframes bottlemouvement {
+  0% {
+    transform: rotate(-45deg);
+    margin-bottom: 0;
+  }
+  20% {
+    margin-bottom: 320px;
+  }
+  /*
+      20% {transform: rotate(-20deg);}
+      40% {transform: rotate(5deg);}
+      60% {transform: rotate(25deg);}
+      80% {transform: rotate(50deg);}
+  */
+  100% {
+    transform: rotate(70deg);
+    margin-bottom: 320px;
+  }
+}
+@keyframes glasmouvement {
+  0% {
+    transform: translateX(-15px);
+  }
+  /*
+      20% {transform: translateX(-30px);}
+      40% {transform: translateX(-45px);}
+      60% {transform: translateX(-60px);}
+      80% {transform: translateX(-75px);}
+  */
+  100% {
+    transform: translateX(-100px);
+  }
+}
+@keyframes loadercontainerentrees {
+  0% {
+    top: 410px;
+  }
+  100% {
+    top: 0;
+  }
+}
 .container {
   background-color: #fff;
   position: fixed;
@@ -95,7 +142,7 @@
   z-index: 10;
   visibility: hidden;
   /*animation: loading 35 * $duration linear backwards;*/
-  animation: loading 300ms linear backwards;
+  animation: loading 5000ms linear backwards;
 }
 
 .loader {
@@ -105,12 +152,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 100px;
+  gap: 50px;
 }
 .loader-element {
+  margin-top: 70px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 35px;
 }
 .loader-element-1 {
@@ -119,24 +167,57 @@
   justify-content: center;
 }
 .loader-element-1 i {
-  font-size: 10em;
-  color: #ffffff;
-  animation: spin 700ms 6 ease-in-out alternate-reverse;
+  font-size: 15em;
+  color: hsl(var(--hhh), var(--sss), var(--lll));
+  animation-name: bottlemouvement;
+  animation-duration: 4500ms;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
+  margin-bottom: 320px;
 }
 .loader-element-2 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.loader-element-2 i {
-  font-size: 10em;
-  color: #ffffff;
-  animation: spin-revert 700ms 6 ease-in-out alternate-reverse;
+.loader-element-2 svg {
+  margin-left: 20px;
+  margin-bottom: -50px;
+  fill: url(#svg-loader-linear);
+  color: #9356DC;
+  animation-name: glasmouvement;
+  animation-duration: 5000ms;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
 }
 .loader-text {
   font-family: "Shrikhand";
   font-size: 1.75em;
   font-weight: 400;
+  margin-top: 50px;
+}
+
+#svg-loader-linear {
+  --color-stop: #9356dc;
+  --color-bot: #FF79DA;
+}
+
+.loaderentrees {
+  position: absolute;
+  top: 317px;
+  height: 270px;
+  width: 100%;
+  z-index: 10;
+  animation-name: loadercartes;
+  animation-duration: 5000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
 }
 
 /* ---  1  --- */
@@ -610,8 +691,16 @@ body {
   margin-block: 2rem;
 }
 .landingresto-container__entrees {
+  position: absolute;
+  top: 317px;
   margin: 0 13px 12px 13px;
   width: 93.06%;
+  animation-name: loadercontainerentrees;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
+  animation-fill-mode: both;
   display: flex;
   flex-wrap: wrap;
 }
@@ -621,6 +710,12 @@ body {
   font-weight: 300;
   line-height: 1.1875rem;
   text-transform: uppercase;
+}
+
+.loadercontainer {
+  position: relative;
+  height: 410px;
+  width: 100%;
 }
 
 /* --- Spécial note enchantée --- */
@@ -672,7 +767,6 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  line-height: 1.1875rem;
   text-transform: uppercase;
 }
 
@@ -872,9 +966,7 @@ body {
     margin-left: 24px;
   }
   .landingresto-container__entrees {
-    /*margin-bottom: 12px;*/
     width: 60.094%;
-    /*height: 310px;*/
     display: flex;
     flex-wrap: wrap;
     margin: 0 19.952% 0 19.952%;
