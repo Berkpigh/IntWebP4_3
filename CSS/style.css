@@ -136,6 +136,16 @@
     opacity: 1;
   }
 }
+@keyframes loadercartescontainer-ne {
+  0% {
+    top: 430px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
 .container {
   background-color: #fff;
   position: fixed;
@@ -150,16 +160,22 @@
 }
 
 .loader {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 50px;
 }
+.loader-text1 {
+  position: absolute;
+  top: 20px;
+}
 .loader-element {
-  margin-top: 70px;
+  position: absolute;
+  top: 180px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -188,7 +204,7 @@
 }
 .loader-element-2__container {
   position: relative;
-  height: 500px;
+  height: 450px;
 }
 .loader-element-2__svg1 {
   position: absolute;
@@ -221,11 +237,16 @@
   animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
   animation-fill-mode: both;
 }
+.loader-text2 {
+  position: absolute;
+  top: 530px;
+}
 .loader-text {
   font-family: "Shrikhand";
   font-size: 1.75em;
   font-weight: 400;
   margin-top: 50px;
+  margin-block: 0;
 }
 
 #svg-loader-linear1 {
@@ -236,20 +257,6 @@
 #svg-loader-linear2 {
   --color-bot: #9356dc;
   --color-top: #FF79DA;
-}
-
-.loaderentrees {
-  position: absolute;
-  top: 0;
-  height: 270px;
-  width: 100%;
-  z-index: -1;
-  animation-name: loadercartes;
-  animation-duration: 5000ms;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-timing-function: cubic-bezier(0.67, 0.14, 0.18, 0.61);
-  animation-fill-mode: both;
 }
 
 /* ---  1  --- */

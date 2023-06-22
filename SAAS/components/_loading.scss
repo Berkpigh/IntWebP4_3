@@ -9,13 +9,21 @@
 }
 
 .loader {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 90%;
     @include flex-center;
     flex-direction: column;
     gap: 50px;
+
+    &-text1 {
+        position: absolute;
+        top: 20px;        
+    }
+
     &-element {
-        margin-top: 70px;
+        position: absolute;
+        top: 180px;
         @include flex-around;
         gap:35px;
         &-1 {
@@ -37,7 +45,7 @@
 
             &__container {
                 position: relative;
-                height: 500px;
+                height: 450px;
             }
 
             &__svg1 {
@@ -74,11 +82,18 @@
             }
         }
     }
+    
+    &-text2 {
+        position: absolute;
+        top: 530px;        
+    }
+    
     &-text {
         font-family: 'Shrikhand';
         font-size: 1.75em;
         font-weight: 400;
-        margin-top: 50px; 
+        margin-top: 50px;
+        margin-block: 0; 
     }
 }
 #svg-loader-linear1 {
