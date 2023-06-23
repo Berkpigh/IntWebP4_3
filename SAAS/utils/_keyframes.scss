@@ -92,14 +92,16 @@
         margin-bottom: 320px;}
 }
 @keyframes glasmouvement1 {
-    0% {transform: translateX(0);}
+    0% {transform: translateX(0);
+        opacity: 1;}
     20% {transform: translateX(-65px);}
+    50% {opacity: 1;}
     100% {transform: translateX(-65px);
         opacity: 0;}
 }
 @keyframes glasmouvement2 {
     0% {opacity: 0;}
-    20% {opacity: 0;}
+    50% {opacity: 0;}
     100% {opacity: 1;}    
 }
 
