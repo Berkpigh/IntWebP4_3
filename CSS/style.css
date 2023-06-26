@@ -219,7 +219,6 @@
   margin-bottom: -50px;
   fill: url(#svg-loader-linear1);
   color: #9356DC;
-  stroke: #000;
   animation-name: glasmouvement1;
   animation-duration: 5000ms;
   animation-iteration-count: 1;
@@ -236,7 +235,6 @@
   margin-bottom: -50px;
   fill: url(#svg-loader-linear2);
   color: #9356DC;
-  stroke: #000;
   animation-name: glasmouvement2;
   animation-duration: 5000ms;
   animation-iteration-count: 1;
@@ -257,12 +255,12 @@
 }
 
 #svg-loader-linear1 {
-  --color-bot: #9356dc;
+  --color-bot: hsl(var(--hhh), var(--sss), var(--lll));
   --color-top: #f1ebf2;
 }
 
 #svg-loader-linear2 {
-  --color-bot: #9356dc;
+  --color-bot: hsl(var(--hhh), var(--sss), var(--lll));
   --color-top: #f1ebf2;
 }
 

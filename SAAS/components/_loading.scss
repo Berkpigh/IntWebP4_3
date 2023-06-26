@@ -57,7 +57,6 @@
                 margin-bottom: -50px;
                 fill: url(#svg-loader-linear1);
                 color: $color-pimary;
-                stroke: #000;
                 animation-name: glasmouvement1;
                 animation-duration: 50 * $duration;
                 animation-iteration-count: 1;
@@ -75,8 +74,6 @@
                 margin-bottom: -50px;
                 fill: url(#svg-loader-linear2);
                 color: $color-pimary;
-                stroke: #000;
-
                 animation-name: glasmouvement2;
                 animation-duration: 50 * $duration;
                 animation-iteration-count: 1;
@@ -101,10 +98,10 @@
     }
 }
 #svg-loader-linear1 {
-    --color-bot: #{$col-violet};    
+    --color-bot: #{$col-bottle};    
     --color-top: #{$col-lightgrey};
 }
 #svg-loader-linear2 {
-    --color-bot: #{$col-violet};    
+    --color-bot: #{$col-bottle};    
     --color-top: #{$col-lightgrey};
 }
